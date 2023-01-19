@@ -70,6 +70,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TestService.resx">
+      <DependentUpon>TestService.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Connected Services\WebServiInficaja\TestService.WebServiInficaja.PROC_BitacoraDeptoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -223,7 +226,7 @@
     <None Include="Connected Services\WebServiInficaja\TestService.WebServiInficaja.ST_ValidaUsuario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WebServiInficaja\WebServiInficaja.wsdl" />
+    <None Include="Connected Services\WebServiInficaja\WebServiInficaja1.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -588,7 +588,7 @@
     <part name="PROC_ListadoCtasTercerosSPEIResponse" type="s0:PROC_ListadoCtasTercerosSPEIResponse" />
   </message>
   <message name="WebServiInficaja_PROC_Token_MessageIn">
-    <part name="pCliente" type="xsd:string" />
+    <part name="pCliente" type="xsd:int" />
     <part name="pCodigo" type="xsd:string" />
     <part name="pLlaveConexion" type="xsd:string" />
   </message>
@@ -704,7 +704,7 @@
     <part name="PROC_CargaEdoCtasResponse" type="s0:PROC_CargaEdoCtasResponse" />
   </message>
   <message name="WebServiInficaja_PROC_UpdatePass_MessageIn">
-    <part name="pCliente" type="xsd:string" />
+    <part name="pCliente" type="xsd:int" />
     <part name="pToken" type="xsd:string" />
     <part name="pPassNew" type="xsd:string" />
     <part name="pLlaveConexion" type="xsd:string" />
@@ -752,7 +752,7 @@
     <part name="PROC_PlanPagosResponse" type="s0:PROC_PlanPagosResponse" />
   </message>
   <message name="WebServiInficaja_PROC_UpdateCel_MessageIn">
-    <part name="pCliente" type="xsd:string" />
+    <part name="pCliente" type="xsd:int" />
     <part name="pCelular" type="xsd:string" />
     <part name="pCodigo" type="xsd:string" />
     <part name="pLlaveConexion" type="xsd:string" />
@@ -864,7 +864,7 @@
       <output message="s0:WebServiInficaja_PROC_ListadoCtasTercerosSPEI_MessageOut" />
     </operation>
     <operation name="PROC_Token">
-      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_Token (&amp;lt;pCliente&amp;gt;, &amp;lt;pCodigo&amp;gt;, &amp;lt;pLlaveConexion&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pCliente: &amp;lt;specify the role of pCliente&amp;gt;&lt;br /&gt;	pCodigo: &amp;lt;specify the role of pCodigo&amp;gt;&lt;br /&gt; 	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;&lt;br /&gt; 	pTelefono: &amp;lt;specify the role of pTelefono&amp;gt;</documentation>
+      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_Token (&amp;lt;pCliente&amp;gt; is int, &amp;lt;pCodigo&amp;gt;, &amp;lt;pLlaveConexion&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pCliente (int): &amp;lt;specify the role of pCliente&amp;gt;&lt;br /&gt;	pCodigo: &amp;lt;specify the role of pCodigo&amp;gt;&lt;br /&gt;	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;&lt;br /&gt; 	pTelefono: &amp;lt;specify the role of pTelefono&amp;gt;</documentation>
       <input message="s0:WebServiInficaja_PROC_Token_MessageIn" />
       <output message="s0:WebServiInficaja_PROC_Token_MessageOut" />
     </operation>
@@ -907,7 +907,7 @@
       <output message="s0:WebServiInficaja_PROC_CargaEdoCtas_MessageOut" />
     </operation>
     <operation name="PROC_UpdatePass">
-      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_UpdatePass (&amp;lt;pCliente&amp;gt;, &amp;lt;pToken&amp;gt;, &amp;lt;pPassNew&amp;gt;, &amp;lt;pLlaveConexion&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pCliente: &amp;lt;specify the role of pCliente&amp;gt;&lt;br /&gt;	pToken: &amp;lt;specify the role of pCodigo&amp;gt;&lt;br /&gt;	pPassNew: &amp;lt;specify the role of pPassNew&amp;gt;&lt;br /&gt; 	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;&lt;br /&gt; 	pTelefono: &amp;lt;specify the role of pTelefono&amp;gt;</documentation>
+      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_UpdatePass (&amp;lt;pCliente&amp;gt; is int, &amp;lt;pToken&amp;gt;, &amp;lt;pPassNew&amp;gt;, &amp;lt;pLlaveConexion&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pCliente (int): &amp;lt;specify the role of pCliente&amp;gt;&lt;br /&gt;	pToken: &amp;lt;specify the role of pCodigo&amp;gt;&lt;br /&gt;	pPassNew: &amp;lt;specify the role of pPassNew&amp;gt;&lt;br /&gt;	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;&lt;br /&gt; 	pTelefono: &amp;lt;specify the role of pTelefono&amp;gt;</documentation>
       <input message="s0:WebServiInficaja_PROC_UpdatePass_MessageIn" />
       <output message="s0:WebServiInficaja_PROC_UpdatePass_MessageOut" />
     </operation>
@@ -932,7 +932,7 @@
       <output message="s0:WebServiInficaja_PROC_PlanPagos_MessageOut" />
     </operation>
     <operation name="PROC_UpdateCel">
-      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_UpdateCel (&amp;lt;pCliente&amp;gt;, &amp;lt;pCelular&amp;gt;, &amp;lt;pCodigo&amp;gt;, &amp;lt;pLlaveConexion&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pCliente: &amp;lt;specify the role of pCliente&amp;gt;&lt;br /&gt;	pCelular: &amp;lt;specify the role of pCelular&amp;gt;&lt;br /&gt;	pCodigo: &amp;lt;specify the role of pCodigo&amp;gt;&lt;br /&gt; 	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;</documentation>
+      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_UpdateCel (&amp;lt;pCliente&amp;gt; is int, &amp;lt;pCelular&amp;gt;, &amp;lt;pCodigo&amp;gt;, &amp;lt;pLlaveConexion&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pCliente (int): &amp;lt;specify the role of pCliente&amp;gt;&lt;br /&gt;	pCelular: &amp;lt;specify the role of pCelular&amp;gt;&lt;br /&gt;	pCodigo: &amp;lt;specify the role of pCodigo&amp;gt;&lt;br /&gt;	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;</documentation>
       <input message="s0:WebServiInficaja_PROC_UpdateCel_MessageIn" />
       <output message="s0:WebServiInficaja_PROC_UpdateCel_MessageOut" />
     </operation>
@@ -1254,7 +1254,7 @@
   </binding>
   <service name="WebServiInficaja">
     <port name="WebServiInficajaSOAPPort" binding="s0:WebServiInficajaSOAPBinding">
-      <soap:address location="http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws" />
+      <soap:address location="http://serviciosvarios.ngrok.io/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws" />
     </port>
   </service>
 </definitions>

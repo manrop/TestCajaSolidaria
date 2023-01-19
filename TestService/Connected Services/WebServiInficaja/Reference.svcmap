@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://serviciosvarios.ngrok.io/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WebServiInficaja.wsdl" MetadataType="Wsdl" ID="7a9003df-9745-431d-ad4c-ec4778388e79" SourceId="1" SourceUrl="http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl" />
+    <MetadataFile FileName="WebServiInficaja1.wsdl" MetadataType="Wsdl" ID="452a16c1-0599-45f1-bc6e-cbf006d966e2" SourceId="1" SourceUrl="https://serviciosvarios.ngrok.io/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

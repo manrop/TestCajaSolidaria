@@ -18,266 +18,266 @@ namespace TestService.WebServiInficaja {
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_SavingsAccounts no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsAccounts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_SavingsAccountsResponse PROC_SavingsAccounts(global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest request);
+        PROC_SavingsAccountsResponse PROC_SavingsAccounts(PROC_SavingsAccountsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsAccounts", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccountsResponse> PROC_SavingsAccountsAsync(global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest request);
+        System.Threading.Tasks.Task<PROC_SavingsAccountsResponse> PROC_SavingsAccountsAsync(PROC_SavingsAccountsRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_Connection no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Connection", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_ConnectionResponse PROC_Connection(global::TestService.WebServiInficaja.PROC_ConnectionRequest request);
+        PROC_ConnectionResponse PROC_Connection(PROC_ConnectionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Connection", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ConnectionResponse> PROC_ConnectionAsync(global::TestService.WebServiInficaja.PROC_ConnectionRequest request);
+        System.Threading.Tasks.Task<PROC_ConnectionResponse> PROC_ConnectionAsync(PROC_ConnectionRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_DataClient no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataClient", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_DataClientResponse PROC_DataClient(global::TestService.WebServiInficaja.PROC_DataClientRequest request);
+        PROC_DataClientResponse PROC_DataClient(PROC_DataClientRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataClient", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataClientResponse> PROC_DataClientAsync(global::TestService.WebServiInficaja.PROC_DataClientRequest request);
+        System.Threading.Tasks.Task<PROC_DataClientResponse> PROC_DataClientAsync(PROC_DataClientRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_DataBalance no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataBalance", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_DataBalanceResponse PROC_DataBalance(global::TestService.WebServiInficaja.PROC_DataBalanceRequest request);
+        PROC_DataBalanceResponse PROC_DataBalance(PROC_DataBalanceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataBalance", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataBalanceResponse> PROC_DataBalanceAsync(global::TestService.WebServiInficaja.PROC_DataBalanceRequest request);
+        System.Threading.Tasks.Task<PROC_DataBalanceResponse> PROC_DataBalanceAsync(PROC_DataBalanceRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_CreditPayments no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CreditPayments", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_CreditPaymentsResponse PROC_CreditPayments(global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest request);
+        PROC_CreditPaymentsResponse PROC_CreditPayments(PROC_CreditPaymentsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CreditPayments", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CreditPaymentsResponse> PROC_CreditPaymentsAsync(global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest request);
+        System.Threading.Tasks.Task<PROC_CreditPaymentsResponse> PROC_CreditPaymentsAsync(PROC_CreditPaymentsRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_SavingsPersonalInformation no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsPersonalInformation", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationResponse PROC_SavingsPersonalInformation(global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest request);
+        PROC_SavingsPersonalInformationResponse PROC_SavingsPersonalInformation(PROC_SavingsPersonalInformationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsPersonalInformation", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationResponse> PROC_SavingsPersonalInformationAsync(global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest request);
+        System.Threading.Tasks.Task<PROC_SavingsPersonalInformationResponse> PROC_SavingsPersonalInformationAsync(PROC_SavingsPersonalInformationRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_Movements no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Movements", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_MovementsResponse PROC_Movements(global::TestService.WebServiInficaja.PROC_MovementsRequest request);
+        PROC_MovementsResponse PROC_Movements(PROC_MovementsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Movements", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_MovementsResponse> PROC_MovementsAsync(global::TestService.WebServiInficaja.PROC_MovementsRequest request);
+        System.Threading.Tasks.Task<PROC_MovementsResponse> PROC_MovementsAsync(PROC_MovementsRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_Transfers no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Transfers", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_TransfersResponse PROC_Transfers(global::TestService.WebServiInficaja.PROC_TransfersRequest request);
+        PROC_TransfersResponse PROC_Transfers(PROC_TransfersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Transfers", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_TransfersResponse> PROC_TransfersAsync(global::TestService.WebServiInficaja.PROC_TransfersRequest request);
+        System.Threading.Tasks.Task<PROC_TransfersResponse> PROC_TransfersAsync(PROC_TransfersRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_DataClient_txt no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataClient_txt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_DataClient_txtResponse PROC_DataClient_txt(global::TestService.WebServiInficaja.PROC_DataClient_txtRequest request);
+        PROC_DataClient_txtResponse PROC_DataClient_txt(PROC_DataClient_txtRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataClient_txt", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataClient_txtResponse> PROC_DataClient_txtAsync(global::TestService.WebServiInficaja.PROC_DataClient_txtRequest request);
+        System.Threading.Tasks.Task<PROC_DataClient_txtResponse> PROC_DataClient_txtAsync(PROC_DataClient_txtRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_DataBalance_txt no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataBalance_txt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_DataBalance_txtResponse PROC_DataBalance_txt(global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest request);
+        PROC_DataBalance_txtResponse PROC_DataBalance_txt(PROC_DataBalance_txtRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_DataBalance_txt", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataBalance_txtResponse> PROC_DataBalance_txtAsync(global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest request);
+        System.Threading.Tasks.Task<PROC_DataBalance_txtResponse> PROC_DataBalance_txtAsync(PROC_DataBalance_txtRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_Transfers_txt no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Transfers_txt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_Transfers_txtResponse PROC_Transfers_txt(global::TestService.WebServiInficaja.PROC_Transfers_txtRequest request);
+        PROC_Transfers_txtResponse PROC_Transfers_txt(PROC_Transfers_txtRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Transfers_txt", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_Transfers_txtResponse> PROC_Transfers_txtAsync(global::TestService.WebServiInficaja.PROC_Transfers_txtRequest request);
+        System.Threading.Tasks.Task<PROC_Transfers_txtResponse> PROC_Transfers_txtAsync(PROC_Transfers_txtRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_Movements_txt no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Movements_txt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_Movements_txtResponse PROC_Movements_txt(global::TestService.WebServiInficaja.PROC_Movements_txtRequest request);
+        PROC_Movements_txtResponse PROC_Movements_txt(PROC_Movements_txtRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Movements_txt", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_Movements_txtResponse> PROC_Movements_txtAsync(global::TestService.WebServiInficaja.PROC_Movements_txtRequest request);
+        System.Threading.Tasks.Task<PROC_Movements_txtResponse> PROC_Movements_txtAsync(PROC_Movements_txtRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_CtasTercerosAltaSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CtasTercerosAltaSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIResponse PROC_CtasTercerosAltaSPEI(global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest request);
+        PROC_CtasTercerosAltaSPEIResponse PROC_CtasTercerosAltaSPEI(PROC_CtasTercerosAltaSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CtasTercerosAltaSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIResponse> PROC_CtasTercerosAltaSPEIAsync(global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_CtasTercerosAltaSPEIResponse> PROC_CtasTercerosAltaSPEIAsync(PROC_CtasTercerosAltaSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_CtasTercerosBajaSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CtasTercerosBajaSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIResponse PROC_CtasTercerosBajaSPEI(global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest request);
+        PROC_CtasTercerosBajaSPEIResponse PROC_CtasTercerosBajaSPEI(PROC_CtasTercerosBajaSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CtasTercerosBajaSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIResponse> PROC_CtasTercerosBajaSPEIAsync(global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_CtasTercerosBajaSPEIResponse> PROC_CtasTercerosBajaSPEIAsync(PROC_CtasTercerosBajaSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_ListadoCtasTercerosSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_ListadoCtasTercerosSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIResponse PROC_ListadoCtasTercerosSPEI(global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest request);
+        PROC_ListadoCtasTercerosSPEIResponse PROC_ListadoCtasTercerosSPEI(PROC_ListadoCtasTercerosSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_ListadoCtasTercerosSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIResponse> PROC_ListadoCtasTercerosSPEIAsync(global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_ListadoCtasTercerosSPEIResponse> PROC_ListadoCtasTercerosSPEIAsync(PROC_ListadoCtasTercerosSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_Token no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Token", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_TokenResponse PROC_Token(global::TestService.WebServiInficaja.PROC_TokenRequest request);
+        PROC_TokenResponse PROC_Token(PROC_TokenRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_Token", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_TokenResponse> PROC_TokenAsync(global::TestService.WebServiInficaja.PROC_TokenRequest request);
+        System.Threading.Tasks.Task<PROC_TokenResponse> PROC_TokenAsync(PROC_TokenRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_CtaClabeCte no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CtaClabeCte", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_CtaClabeCteResponse PROC_CtaClabeCte(global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest request);
+        PROC_CtaClabeCteResponse PROC_CtaClabeCte(PROC_CtaClabeCteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CtaClabeCte", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtaClabeCteResponse> PROC_CtaClabeCteAsync(global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest request);
+        System.Threading.Tasks.Task<PROC_CtaClabeCteResponse> PROC_CtaClabeCteAsync(PROC_CtaClabeCteRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_SavingsAccountsSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsAccountsSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIResponse PROC_SavingsAccountsSPEI(global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest request);
+        PROC_SavingsAccountsSPEIResponse PROC_SavingsAccountsSPEI(PROC_SavingsAccountsSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsAccountsSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIResponse> PROC_SavingsAccountsSPEIAsync(global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_SavingsAccountsSPEIResponse> PROC_SavingsAccountsSPEIAsync(PROC_SavingsAccountsSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_CreditPaymentsSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CreditPaymentsSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIResponse PROC_CreditPaymentsSPEI(global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest request);
+        PROC_CreditPaymentsSPEIResponse PROC_CreditPaymentsSPEI(PROC_CreditPaymentsSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CreditPaymentsSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIResponse> PROC_CreditPaymentsSPEIAsync(global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_CreditPaymentsSPEIResponse> PROC_CreditPaymentsSPEIAsync(PROC_CreditPaymentsSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_EnviarSMS no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_EnviarSMS", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_EnviarSMSResponse PROC_EnviarSMS(global::TestService.WebServiInficaja.PROC_EnviarSMSRequest request);
+        PROC_EnviarSMSResponse PROC_EnviarSMS(PROC_EnviarSMSRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_EnviarSMS", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_EnviarSMSResponse> PROC_EnviarSMSAsync(global::TestService.WebServiInficaja.PROC_EnviarSMSRequest request);
+        System.Threading.Tasks.Task<PROC_EnviarSMSResponse> PROC_EnviarSMSAsync(PROC_EnviarSMSRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_SavingsAccounts_txt no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsAccounts_txt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtResponse PROC_SavingsAccounts_txt(global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest request);
+        PROC_SavingsAccounts_txtResponse PROC_SavingsAccounts_txt(PROC_SavingsAccounts_txtRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_SavingsAccounts_txt", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtResponse> PROC_SavingsAccounts_txtAsync(global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest request);
+        System.Threading.Tasks.Task<PROC_SavingsAccounts_txtResponse> PROC_SavingsAccounts_txtAsync(PROC_SavingsAccounts_txtRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_ListadoBancosSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_ListadoBancosSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIResponse PROC_ListadoBancosSPEI(global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest request);
+        PROC_ListadoBancosSPEIResponse PROC_ListadoBancosSPEI(PROC_ListadoBancosSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_ListadoBancosSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIResponse> PROC_ListadoBancosSPEIAsync(global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_ListadoBancosSPEIResponse> PROC_ListadoBancosSPEIAsync(PROC_ListadoBancosSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_OrdenesPagoSPEI no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_OrdenesPagoSPEI", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIResponse PROC_OrdenesPagoSPEI(global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest request);
+        PROC_OrdenesPagoSPEIResponse PROC_OrdenesPagoSPEI(PROC_OrdenesPagoSPEIRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_OrdenesPagoSPEI", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIResponse> PROC_OrdenesPagoSPEIAsync(global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest request);
+        System.Threading.Tasks.Task<PROC_OrdenesPagoSPEIResponse> PROC_OrdenesPagoSPEIAsync(PROC_OrdenesPagoSPEIRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_CargaEdoCtas no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CargaEdoCtas", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_CargaEdoCtasResponse PROC_CargaEdoCtas(global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest request);
+        PROC_CargaEdoCtasResponse PROC_CargaEdoCtas(PROC_CargaEdoCtasRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_CargaEdoCtas", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CargaEdoCtasResponse> PROC_CargaEdoCtasAsync(global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest request);
+        System.Threading.Tasks.Task<PROC_CargaEdoCtasResponse> PROC_CargaEdoCtasAsync(PROC_CargaEdoCtasRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_UpdatePass no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_UpdatePass", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_UpdatePassResponse PROC_UpdatePass(global::TestService.WebServiInficaja.PROC_UpdatePassRequest request);
+        PROC_UpdatePassResponse PROC_UpdatePass(PROC_UpdatePassRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_UpdatePass", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_UpdatePassResponse> PROC_UpdatePassAsync(global::TestService.WebServiInficaja.PROC_UpdatePassRequest request);
+        System.Threading.Tasks.Task<PROC_UpdatePassResponse> PROC_UpdatePassAsync(PROC_UpdatePassRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_BitacoraDepto no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_BitacoraDepto", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_BitacoraDeptoResponse PROC_BitacoraDepto(global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest request);
+        PROC_BitacoraDeptoResponse PROC_BitacoraDepto(PROC_BitacoraDeptoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_BitacoraDepto", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_BitacoraDeptoResponse> PROC_BitacoraDeptoAsync(global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest request);
+        System.Threading.Tasks.Task<PROC_BitacoraDeptoResponse> PROC_BitacoraDeptoAsync(PROC_BitacoraDeptoRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_GeneraLlaveConexion no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_GeneraLlaveConexion", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionResponse PROC_GeneraLlaveConexion(global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest request);
+        PROC_GeneraLlaveConexionResponse PROC_GeneraLlaveConexion(PROC_GeneraLlaveConexionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_GeneraLlaveConexion", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionResponse> PROC_GeneraLlaveConexionAsync(global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest request);
+        System.Threading.Tasks.Task<PROC_GeneraLlaveConexionResponse> PROC_GeneraLlaveConexionAsync(PROC_GeneraLlaveConexionRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_ValidaUsuario no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_ValidaUsuario", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_ValidaUsuarioResponse PROC_ValidaUsuario(global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest request);
+        PROC_ValidaUsuarioResponse PROC_ValidaUsuario(PROC_ValidaUsuarioRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_ValidaUsuario", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ValidaUsuarioResponse> PROC_ValidaUsuarioAsync(global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest request);
+        System.Threading.Tasks.Task<PROC_ValidaUsuarioResponse> PROC_ValidaUsuarioAsync(PROC_ValidaUsuarioRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_PlanPagos no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_PlanPagos", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_PlanPagosResponse PROC_PlanPagos(global::TestService.WebServiInficaja.PROC_PlanPagosRequest request);
+        PROC_PlanPagosResponse PROC_PlanPagos(PROC_PlanPagosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_PlanPagos", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_PlanPagosResponse> PROC_PlanPagosAsync(global::TestService.WebServiInficaja.PROC_PlanPagosRequest request);
+        System.Threading.Tasks.Task<PROC_PlanPagosResponse> PROC_PlanPagosAsync(PROC_PlanPagosRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_UpdateCel no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_UpdateCel", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_UpdateCelResponse PROC_UpdateCel(global::TestService.WebServiInficaja.PROC_UpdateCelRequest request);
+        PROC_UpdateCelResponse PROC_UpdateCel(PROC_UpdateCelRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_UpdateCel", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_UpdateCelResponse> PROC_UpdateCelAsync(global::TestService.WebServiInficaja.PROC_UpdateCelRequest request);
+        System.Threading.Tasks.Task<PROC_UpdateCelResponse> PROC_UpdateCelAsync(PROC_UpdateCelRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_LineaCel no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_LineaCel", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_LineaCelResponse PROC_LineaCel(global::TestService.WebServiInficaja.PROC_LineaCelRequest request);
+        PROC_LineaCelResponse PROC_LineaCel(PROC_LineaCelRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_LineaCel", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_LineaCelResponse> PROC_LineaCelAsync(global::TestService.WebServiInficaja.PROC_LineaCelRequest request);
+        System.Threading.Tasks.Task<PROC_LineaCelResponse> PROC_LineaCelAsync(PROC_LineaCelRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_EnviarWhatsApp no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_EnviarWhatsApp", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_EnviarWhatsAppResponse PROC_EnviarWhatsApp(global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest request);
+        PROC_EnviarWhatsAppResponse PROC_EnviarWhatsApp(PROC_EnviarWhatsAppRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_EnviarWhatsApp", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_EnviarWhatsAppResponse> PROC_EnviarWhatsAppAsync(global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest request);
+        System.Threading.Tasks.Task<PROC_EnviarWhatsAppResponse> PROC_EnviarWhatsAppAsync(PROC_EnviarWhatsAppRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que la operación PROC_RegistrationData_Valid no es RPC ni está encapsulada en un documento.
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_RegistrationData_Valid", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        global::TestService.WebServiInficaja.PROC_RegistrationData_ValidResponse PROC_RegistrationData_Valid(global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest request);
+        PROC_RegistrationData_ValidResponse PROC_RegistrationData_Valid(PROC_RegistrationData_ValidRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:WebServiInficaja/PROC_RegistrationData_Valid", ReplyAction="*")]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_RegistrationData_ValidResponse> PROC_RegistrationData_ValidAsync(global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest request);
+        System.Threading.Tasks.Task<PROC_RegistrationData_ValidResponse> PROC_RegistrationData_ValidAsync(PROC_RegistrationData_ValidRequest request);
     }
     
     /// <remarks/>
@@ -3724,12 +3724,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_SavingsAccountsResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_SavingsAccountsResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_SavingsAccounts[] PROC_SavingsAccountsResponse1;
+        public ST_SavingsAccounts[] PROC_SavingsAccountsResponse1;
         
         public PROC_SavingsAccountsResponse() {
         }
         
-        public PROC_SavingsAccountsResponse(global::TestService.WebServiInficaja.ST_SavingsAccounts[] PROC_SavingsAccountsResponse1) {
+        public PROC_SavingsAccountsResponse(ST_SavingsAccounts[] PROC_SavingsAccountsResponse1) {
             this.PROC_SavingsAccountsResponse1 = PROC_SavingsAccountsResponse1;
         }
     }
@@ -3802,12 +3802,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_DataClientResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_DataClientResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_DataClient[] PROC_DataClientResponse1;
+        public ST_DataClient[] PROC_DataClientResponse1;
         
         public PROC_DataClientResponse() {
         }
         
-        public PROC_DataClientResponse(global::TestService.WebServiInficaja.ST_DataClient[] PROC_DataClientResponse1) {
+        public PROC_DataClientResponse(ST_DataClient[] PROC_DataClientResponse1) {
             this.PROC_DataClientResponse1 = PROC_DataClientResponse1;
         }
     }
@@ -3858,12 +3858,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_DataBalanceResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_DataBalanceResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_DataBalance[] PROC_DataBalanceResponse1;
+        public ST_DataBalance[] PROC_DataBalanceResponse1;
         
         public PROC_DataBalanceResponse() {
         }
         
-        public PROC_DataBalanceResponse(global::TestService.WebServiInficaja.ST_DataBalance[] PROC_DataBalanceResponse1) {
+        public PROC_DataBalanceResponse(ST_DataBalance[] PROC_DataBalanceResponse1) {
             this.PROC_DataBalanceResponse1 = PROC_DataBalanceResponse1;
         }
     }
@@ -3922,12 +3922,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_CreditPaymentsResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_CreditPaymentsResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_PagoCredito[] PROC_CreditPaymentsResponse1;
+        public ST_PagoCredito[] PROC_CreditPaymentsResponse1;
         
         public PROC_CreditPaymentsResponse() {
         }
         
-        public PROC_CreditPaymentsResponse(global::TestService.WebServiInficaja.ST_PagoCredito[] PROC_CreditPaymentsResponse1) {
+        public PROC_CreditPaymentsResponse(ST_PagoCredito[] PROC_CreditPaymentsResponse1) {
             this.PROC_CreditPaymentsResponse1 = PROC_CreditPaymentsResponse1;
         }
     }
@@ -4036,12 +4036,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_MovementsResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_MovementsResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_Movimientos[] PROC_MovementsResponse1;
+        public ST_Movimientos[] PROC_MovementsResponse1;
         
         public PROC_MovementsResponse() {
         }
         
-        public PROC_MovementsResponse(global::TestService.WebServiInficaja.ST_Movimientos[] PROC_MovementsResponse1) {
+        public PROC_MovementsResponse(ST_Movimientos[] PROC_MovementsResponse1) {
             this.PROC_MovementsResponse1 = PROC_MovementsResponse1;
         }
     }
@@ -4148,12 +4148,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_TransfersResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_TransfersResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_Transfers[] PROC_TransfersResponse1;
+        public ST_Transfers[] PROC_TransfersResponse1;
         
         public PROC_TransfersResponse() {
         }
         
-        public PROC_TransfersResponse(global::TestService.WebServiInficaja.ST_Transfers[] PROC_TransfersResponse1) {
+        public PROC_TransfersResponse(ST_Transfers[] PROC_TransfersResponse1) {
             this.PROC_TransfersResponse1 = PROC_TransfersResponse1;
         }
     }
@@ -4492,12 +4492,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_CtasTercerosAltaSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_CtasTercerosAltaSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_AltaCtasTerceros[] PROC_CtasTercerosAltaSPEIResponse1;
+        public ST_AltaCtasTerceros[] PROC_CtasTercerosAltaSPEIResponse1;
         
         public PROC_CtasTercerosAltaSPEIResponse() {
         }
         
-        public PROC_CtasTercerosAltaSPEIResponse(global::TestService.WebServiInficaja.ST_AltaCtasTerceros[] PROC_CtasTercerosAltaSPEIResponse1) {
+        public PROC_CtasTercerosAltaSPEIResponse(ST_AltaCtasTerceros[] PROC_CtasTercerosAltaSPEIResponse1) {
             this.PROC_CtasTercerosAltaSPEIResponse1 = PROC_CtasTercerosAltaSPEIResponse1;
         }
     }
@@ -4540,12 +4540,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_CtasTercerosBajaSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_CtasTercerosBajaSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_BajaCtasTerceros[] PROC_CtasTercerosBajaSPEIResponse1;
+        public ST_BajaCtasTerceros[] PROC_CtasTercerosBajaSPEIResponse1;
         
         public PROC_CtasTercerosBajaSPEIResponse() {
         }
         
-        public PROC_CtasTercerosBajaSPEIResponse(global::TestService.WebServiInficaja.ST_BajaCtasTerceros[] PROC_CtasTercerosBajaSPEIResponse1) {
+        public PROC_CtasTercerosBajaSPEIResponse(ST_BajaCtasTerceros[] PROC_CtasTercerosBajaSPEIResponse1) {
             this.PROC_CtasTercerosBajaSPEIResponse1 = PROC_CtasTercerosBajaSPEIResponse1;
         }
     }
@@ -4588,12 +4588,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_ListadoCtasTercerosSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_ListadoCtasTercerosSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_ListadoCtasTerceros[] PROC_ListadoCtasTercerosSPEIResponse1;
+        public ST_ListadoCtasTerceros[] PROC_ListadoCtasTercerosSPEIResponse1;
         
         public PROC_ListadoCtasTercerosSPEIResponse() {
         }
         
-        public PROC_ListadoCtasTercerosSPEIResponse(global::TestService.WebServiInficaja.ST_ListadoCtasTerceros[] PROC_ListadoCtasTercerosSPEIResponse1) {
+        public PROC_ListadoCtasTercerosSPEIResponse(ST_ListadoCtasTerceros[] PROC_ListadoCtasTercerosSPEIResponse1) {
             this.PROC_ListadoCtasTercerosSPEIResponse1 = PROC_ListadoCtasTercerosSPEIResponse1;
         }
     }
@@ -4605,7 +4605,7 @@ namespace TestService.WebServiInficaja {
     public partial class PROC_TokenRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string pCliente;
+        public int pCliente;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
         public string pCodigo;
@@ -4616,7 +4616,7 @@ namespace TestService.WebServiInficaja {
         public PROC_TokenRequest() {
         }
         
-        public PROC_TokenRequest(string pCliente, string pCodigo, string pLlaveConexion) {
+        public PROC_TokenRequest(int pCliente, string pCodigo, string pLlaveConexion) {
             this.pCliente = pCliente;
             this.pCodigo = pCodigo;
             this.pLlaveConexion = pLlaveConexion;
@@ -4632,12 +4632,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_TokenResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_TokenResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_Token[] PROC_TokenResponse1;
+        public ST_Token[] PROC_TokenResponse1;
         
         public PROC_TokenResponse() {
         }
         
-        public PROC_TokenResponse(global::TestService.WebServiInficaja.ST_Token[] PROC_TokenResponse1) {
+        public PROC_TokenResponse(ST_Token[] PROC_TokenResponse1) {
             this.PROC_TokenResponse1 = PROC_TokenResponse1;
         }
     }
@@ -4762,12 +4762,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_SavingsAccountsSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_SavingsAccountsSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_SavingsAccounts[] PROC_SavingsAccountsSPEIResponse1;
+        public ST_SavingsAccounts[] PROC_SavingsAccountsSPEIResponse1;
         
         public PROC_SavingsAccountsSPEIResponse() {
         }
         
-        public PROC_SavingsAccountsSPEIResponse(global::TestService.WebServiInficaja.ST_SavingsAccounts[] PROC_SavingsAccountsSPEIResponse1) {
+        public PROC_SavingsAccountsSPEIResponse(ST_SavingsAccounts[] PROC_SavingsAccountsSPEIResponse1) {
             this.PROC_SavingsAccountsSPEIResponse1 = PROC_SavingsAccountsSPEIResponse1;
         }
     }
@@ -4830,12 +4830,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_CreditPaymentsSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_CreditPaymentsSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_PagoCredito[] PROC_CreditPaymentsSPEIResponse1;
+        public ST_PagoCredito[] PROC_CreditPaymentsSPEIResponse1;
         
         public PROC_CreditPaymentsSPEIResponse() {
         }
         
-        public PROC_CreditPaymentsSPEIResponse(global::TestService.WebServiInficaja.ST_PagoCredito[] PROC_CreditPaymentsSPEIResponse1) {
+        public PROC_CreditPaymentsSPEIResponse(ST_PagoCredito[] PROC_CreditPaymentsSPEIResponse1) {
             this.PROC_CreditPaymentsSPEIResponse1 = PROC_CreditPaymentsSPEIResponse1;
         }
     }
@@ -5014,12 +5014,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_ListadoBancosSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_ListadoBancosSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_BancosSPEI[] PROC_ListadoBancosSPEIResponse1;
+        public ST_BancosSPEI[] PROC_ListadoBancosSPEIResponse1;
         
         public PROC_ListadoBancosSPEIResponse() {
         }
         
-        public PROC_ListadoBancosSPEIResponse(global::TestService.WebServiInficaja.ST_BancosSPEI[] PROC_ListadoBancosSPEIResponse1) {
+        public PROC_ListadoBancosSPEIResponse(ST_BancosSPEI[] PROC_ListadoBancosSPEIResponse1) {
             this.PROC_ListadoBancosSPEIResponse1 = PROC_ListadoBancosSPEIResponse1;
         }
     }
@@ -5106,12 +5106,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_OrdenesPagoSPEIResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_OrdenesPagoSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_EnvioSPEI[] PROC_OrdenesPagoSPEIResponse1;
+        public ST_EnvioSPEI[] PROC_OrdenesPagoSPEIResponse1;
         
         public PROC_OrdenesPagoSPEIResponse() {
         }
         
-        public PROC_OrdenesPagoSPEIResponse(global::TestService.WebServiInficaja.ST_EnvioSPEI[] PROC_OrdenesPagoSPEIResponse1) {
+        public PROC_OrdenesPagoSPEIResponse(ST_EnvioSPEI[] PROC_OrdenesPagoSPEIResponse1) {
             this.PROC_OrdenesPagoSPEIResponse1 = PROC_OrdenesPagoSPEIResponse1;
         }
     }
@@ -5154,12 +5154,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_CargaEdoCtasResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_CargaEdoCtasResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_CargaEdoCtas[] PROC_CargaEdoCtasResponse1;
+        public ST_CargaEdoCtas[] PROC_CargaEdoCtasResponse1;
         
         public PROC_CargaEdoCtasResponse() {
         }
         
-        public PROC_CargaEdoCtasResponse(global::TestService.WebServiInficaja.ST_CargaEdoCtas[] PROC_CargaEdoCtasResponse1) {
+        public PROC_CargaEdoCtasResponse(ST_CargaEdoCtas[] PROC_CargaEdoCtasResponse1) {
             this.PROC_CargaEdoCtasResponse1 = PROC_CargaEdoCtasResponse1;
         }
     }
@@ -5171,7 +5171,7 @@ namespace TestService.WebServiInficaja {
     public partial class PROC_UpdatePassRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string pCliente;
+        public int pCliente;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
         public string pToken;
@@ -5185,7 +5185,7 @@ namespace TestService.WebServiInficaja {
         public PROC_UpdatePassRequest() {
         }
         
-        public PROC_UpdatePassRequest(string pCliente, string pToken, string pPassNew, string pLlaveConexion) {
+        public PROC_UpdatePassRequest(int pCliente, string pToken, string pPassNew, string pLlaveConexion) {
             this.pCliente = pCliente;
             this.pToken = pToken;
             this.pPassNew = pPassNew;
@@ -5202,12 +5202,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_UpdatePassResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_UpdatePassResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_UpdatePass[] PROC_UpdatePassResponse1;
+        public ST_UpdatePass[] PROC_UpdatePassResponse1;
         
         public PROC_UpdatePassResponse() {
         }
         
-        public PROC_UpdatePassResponse(global::TestService.WebServiInficaja.ST_UpdatePass[] PROC_UpdatePassResponse1) {
+        public PROC_UpdatePassResponse(ST_UpdatePass[] PROC_UpdatePassResponse1) {
             this.PROC_UpdatePassResponse1 = PROC_UpdatePassResponse1;
         }
     }
@@ -5354,12 +5354,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_ValidaUsuarioResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_ValidaUsuarioResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_ValidaUsuario[] PROC_ValidaUsuarioResponse1;
+        public ST_ValidaUsuario[] PROC_ValidaUsuarioResponse1;
         
         public PROC_ValidaUsuarioResponse() {
         }
         
-        public PROC_ValidaUsuarioResponse(global::TestService.WebServiInficaja.ST_ValidaUsuario[] PROC_ValidaUsuarioResponse1) {
+        public PROC_ValidaUsuarioResponse(ST_ValidaUsuario[] PROC_ValidaUsuarioResponse1) {
             this.PROC_ValidaUsuarioResponse1 = PROC_ValidaUsuarioResponse1;
         }
     }
@@ -5402,12 +5402,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_PlanPagosResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_PlanPagosResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_PlanPagos[] PROC_PlanPagosResponse1;
+        public ST_PlanPagos[] PROC_PlanPagosResponse1;
         
         public PROC_PlanPagosResponse() {
         }
         
-        public PROC_PlanPagosResponse(global::TestService.WebServiInficaja.ST_PlanPagos[] PROC_PlanPagosResponse1) {
+        public PROC_PlanPagosResponse(ST_PlanPagos[] PROC_PlanPagosResponse1) {
             this.PROC_PlanPagosResponse1 = PROC_PlanPagosResponse1;
         }
     }
@@ -5419,7 +5419,7 @@ namespace TestService.WebServiInficaja {
     public partial class PROC_UpdateCelRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string pCliente;
+        public int pCliente;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
         public string pCelular;
@@ -5433,7 +5433,7 @@ namespace TestService.WebServiInficaja {
         public PROC_UpdateCelRequest() {
         }
         
-        public PROC_UpdateCelRequest(string pCliente, string pCelular, string pCodigo, string pLlaveConexion) {
+        public PROC_UpdateCelRequest(int pCliente, string pCelular, string pCodigo, string pLlaveConexion) {
             this.pCliente = pCliente;
             this.pCelular = pCelular;
             this.pCodigo = pCodigo;
@@ -5450,12 +5450,12 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_UpdateCelResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_UpdateCelResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_UpdateCel[] PROC_UpdateCelResponse1;
+        public ST_UpdateCel[] PROC_UpdateCelResponse1;
         
         public PROC_UpdateCelResponse() {
         }
         
-        public PROC_UpdateCelResponse(global::TestService.WebServiInficaja.ST_UpdateCel[] PROC_UpdateCelResponse1) {
+        public PROC_UpdateCelResponse(ST_UpdateCel[] PROC_UpdateCelResponse1) {
             this.PROC_UpdateCelResponse1 = PROC_UpdateCelResponse1;
         }
     }
@@ -5602,23 +5602,23 @@ namespace TestService.WebServiInficaja {
         [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_RegistrationData_ValidResponse", Namespace="", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_RegistrationData_ValidResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public global::TestService.WebServiInficaja.ST_RegistrationData[] PROC_RegistrationData_ValidResponse1;
+        public ST_RegistrationData[] PROC_RegistrationData_ValidResponse1;
         
         public PROC_RegistrationData_ValidResponse() {
         }
         
-        public PROC_RegistrationData_ValidResponse(global::TestService.WebServiInficaja.ST_RegistrationData[] PROC_RegistrationData_ValidResponse1) {
+        public PROC_RegistrationData_ValidResponse(ST_RegistrationData[] PROC_RegistrationData_ValidResponse1) {
             this.PROC_RegistrationData_ValidResponse1 = PROC_RegistrationData_ValidResponse1;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WebServiInficajaSOAPPortTypeChannel : global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType, System.ServiceModel.IClientChannel {
+    public interface WebServiInficajaSOAPPortTypeChannel : WebServiInficajaSOAPPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebServiInficajaSOAPPortTypeClient : System.ServiceModel.ClientBase<global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType>, global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType {
+    public partial class WebServiInficajaSOAPPortTypeClient : System.ServiceModel.ClientBase<WebServiInficajaSOAPPortType>, WebServiInficajaSOAPPortType {
         
         public WebServiInficajaSOAPPortTypeClient() {
         }
@@ -5640,12 +5640,12 @@ namespace TestService.WebServiInficaja {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_SavingsAccountsResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsAccounts(global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest request) {
+        PROC_SavingsAccountsResponse WebServiInficajaSOAPPortType.PROC_SavingsAccounts(PROC_SavingsAccountsRequest request) {
             return base.Channel.PROC_SavingsAccounts(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_SavingsAccounts[] PROC_SavingsAccounts(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest();
+        public ST_SavingsAccounts[] PROC_SavingsAccounts(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
+            PROC_SavingsAccountsRequest inValue = new PROC_SavingsAccountsRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.pCuenta = pCuenta;
@@ -5661,17 +5661,17 @@ namespace TestService.WebServiInficaja {
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.cyPMontoComision = cyPMontoComision;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_SavingsAccountsResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccounts(inValue);
+            PROC_SavingsAccountsResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccounts(inValue);
             return retVal.PROC_SavingsAccountsResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccountsResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsAccountsAsync(global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest request) {
+        System.Threading.Tasks.Task<PROC_SavingsAccountsResponse> WebServiInficajaSOAPPortType.PROC_SavingsAccountsAsync(PROC_SavingsAccountsRequest request) {
             return base.Channel.PROC_SavingsAccountsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccountsResponse> PROC_SavingsAccountsAsync(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsAccountsRequest();
+        public System.Threading.Tasks.Task<PROC_SavingsAccountsResponse> PROC_SavingsAccountsAsync(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
+            PROC_SavingsAccountsRequest inValue = new PROC_SavingsAccountsRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.pCuenta = pCuenta;
@@ -5687,99 +5687,99 @@ namespace TestService.WebServiInficaja {
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.cyPMontoComision = cyPMontoComision;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccountsAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccountsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_ConnectionResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Connection(global::TestService.WebServiInficaja.PROC_ConnectionRequest request) {
+        PROC_ConnectionResponse WebServiInficajaSOAPPortType.PROC_Connection(PROC_ConnectionRequest request) {
             return base.Channel.PROC_Connection(request);
         }
         
         public string PROC_Connection(string pDato) {
-            global::TestService.WebServiInficaja.PROC_ConnectionRequest inValue = new global::TestService.WebServiInficaja.PROC_ConnectionRequest();
+            PROC_ConnectionRequest inValue = new PROC_ConnectionRequest();
             inValue.pDato = pDato;
-            global::TestService.WebServiInficaja.PROC_ConnectionResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Connection(inValue);
+            PROC_ConnectionResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_Connection(inValue);
             return retVal.PROC_ConnectionResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ConnectionResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ConnectionAsync(global::TestService.WebServiInficaja.PROC_ConnectionRequest request) {
+        System.Threading.Tasks.Task<PROC_ConnectionResponse> WebServiInficajaSOAPPortType.PROC_ConnectionAsync(PROC_ConnectionRequest request) {
             return base.Channel.PROC_ConnectionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ConnectionResponse> PROC_ConnectionAsync(string pDato) {
-            global::TestService.WebServiInficaja.PROC_ConnectionRequest inValue = new global::TestService.WebServiInficaja.PROC_ConnectionRequest();
+        public System.Threading.Tasks.Task<PROC_ConnectionResponse> PROC_ConnectionAsync(string pDato) {
+            PROC_ConnectionRequest inValue = new PROC_ConnectionRequest();
             inValue.pDato = pDato;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ConnectionAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_ConnectionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_DataClientResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataClient(global::TestService.WebServiInficaja.PROC_DataClientRequest request) {
+        PROC_DataClientResponse WebServiInficajaSOAPPortType.PROC_DataClient(PROC_DataClientRequest request) {
             return base.Channel.PROC_DataClient(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_DataClient[] PROC_DataClient(int pCliente, string pTelefono, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataClientRequest inValue = new global::TestService.WebServiInficaja.PROC_DataClientRequest();
+        public ST_DataClient[] PROC_DataClient(int pCliente, string pTelefono, string pLlaveConexion) {
+            PROC_DataClientRequest inValue = new PROC_DataClientRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_DataClientResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataClient(inValue);
+            PROC_DataClientResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_DataClient(inValue);
             return retVal.PROC_DataClientResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataClientResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataClientAsync(global::TestService.WebServiInficaja.PROC_DataClientRequest request) {
+        System.Threading.Tasks.Task<PROC_DataClientResponse> WebServiInficajaSOAPPortType.PROC_DataClientAsync(PROC_DataClientRequest request) {
             return base.Channel.PROC_DataClientAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataClientResponse> PROC_DataClientAsync(int pCliente, string pTelefono, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataClientRequest inValue = new global::TestService.WebServiInficaja.PROC_DataClientRequest();
+        public System.Threading.Tasks.Task<PROC_DataClientResponse> PROC_DataClientAsync(int pCliente, string pTelefono, string pLlaveConexion) {
+            PROC_DataClientRequest inValue = new PROC_DataClientRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataClientAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_DataClientAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_DataBalanceResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataBalance(global::TestService.WebServiInficaja.PROC_DataBalanceRequest request) {
+        PROC_DataBalanceResponse WebServiInficajaSOAPPortType.PROC_DataBalance(PROC_DataBalanceRequest request) {
             return base.Channel.PROC_DataBalance(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_DataBalance[] PROC_DataBalance(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataBalanceRequest inValue = new global::TestService.WebServiInficaja.PROC_DataBalanceRequest();
+        public ST_DataBalance[] PROC_DataBalance(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
+            PROC_DataBalanceRequest inValue = new PROC_DataBalanceRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pCuenta = pCuenta;
             inValue.pInversion = pInversion;
             inValue.pDocumento = pDocumento;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_DataBalanceResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataBalance(inValue);
+            PROC_DataBalanceResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_DataBalance(inValue);
             return retVal.PROC_DataBalanceResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataBalanceResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataBalanceAsync(global::TestService.WebServiInficaja.PROC_DataBalanceRequest request) {
+        System.Threading.Tasks.Task<PROC_DataBalanceResponse> WebServiInficajaSOAPPortType.PROC_DataBalanceAsync(PROC_DataBalanceRequest request) {
             return base.Channel.PROC_DataBalanceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataBalanceResponse> PROC_DataBalanceAsync(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataBalanceRequest inValue = new global::TestService.WebServiInficaja.PROC_DataBalanceRequest();
+        public System.Threading.Tasks.Task<PROC_DataBalanceResponse> PROC_DataBalanceAsync(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
+            PROC_DataBalanceRequest inValue = new PROC_DataBalanceRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pCuenta = pCuenta;
             inValue.pInversion = pInversion;
             inValue.pDocumento = pDocumento;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataBalanceAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_DataBalanceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_CreditPaymentsResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CreditPayments(global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest request) {
+        PROC_CreditPaymentsResponse WebServiInficajaSOAPPortType.PROC_CreditPayments(PROC_CreditPaymentsRequest request) {
             return base.Channel.PROC_CreditPayments(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_PagoCredito[] PROC_CreditPayments(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest inValue = new global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest();
+        public ST_PagoCredito[] PROC_CreditPayments(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string pLlaveConexion) {
+            PROC_CreditPaymentsRequest inValue = new PROC_CreditPaymentsRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PDocumento = PDocumento;
@@ -5788,17 +5788,17 @@ namespace TestService.WebServiInficaja {
             inValue.PAbono = PAbono;
             inValue.sPtoken = sPtoken;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_CreditPaymentsResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CreditPayments(inValue);
+            PROC_CreditPaymentsResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_CreditPayments(inValue);
             return retVal.PROC_CreditPaymentsResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CreditPaymentsResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CreditPaymentsAsync(global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest request) {
+        System.Threading.Tasks.Task<PROC_CreditPaymentsResponse> WebServiInficajaSOAPPortType.PROC_CreditPaymentsAsync(PROC_CreditPaymentsRequest request) {
             return base.Channel.PROC_CreditPaymentsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CreditPaymentsResponse> PROC_CreditPaymentsAsync(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest inValue = new global::TestService.WebServiInficaja.PROC_CreditPaymentsRequest();
+        public System.Threading.Tasks.Task<PROC_CreditPaymentsResponse> PROC_CreditPaymentsAsync(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string pLlaveConexion) {
+            PROC_CreditPaymentsRequest inValue = new PROC_CreditPaymentsRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PDocumento = PDocumento;
@@ -5807,47 +5807,47 @@ namespace TestService.WebServiInficaja {
             inValue.PAbono = PAbono;
             inValue.sPtoken = sPtoken;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CreditPaymentsAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_CreditPaymentsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsPersonalInformation(global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest request) {
+        PROC_SavingsPersonalInformationResponse WebServiInficajaSOAPPortType.PROC_SavingsPersonalInformation(PROC_SavingsPersonalInformationRequest request) {
             return base.Channel.PROC_SavingsPersonalInformation(request);
         }
         
         public string PROC_SavingsPersonalInformation(int pCliente, string pTelefono, string pTelefonoNew, string pEmailNew, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest();
+            PROC_SavingsPersonalInformationRequest inValue = new PROC_SavingsPersonalInformationRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pTelefonoNew = pTelefonoNew;
             inValue.pEmailNew = pEmailNew;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsPersonalInformation(inValue);
+            PROC_SavingsPersonalInformationResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsPersonalInformation(inValue);
             return retVal.PROC_SavingsPersonalInformationResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsPersonalInformationAsync(global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest request) {
+        System.Threading.Tasks.Task<PROC_SavingsPersonalInformationResponse> WebServiInficajaSOAPPortType.PROC_SavingsPersonalInformationAsync(PROC_SavingsPersonalInformationRequest request) {
             return base.Channel.PROC_SavingsPersonalInformationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationResponse> PROC_SavingsPersonalInformationAsync(int pCliente, string pTelefono, string pTelefonoNew, string pEmailNew, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsPersonalInformationRequest();
+        public System.Threading.Tasks.Task<PROC_SavingsPersonalInformationResponse> PROC_SavingsPersonalInformationAsync(int pCliente, string pTelefono, string pTelefonoNew, string pEmailNew, string pLlaveConexion) {
+            PROC_SavingsPersonalInformationRequest inValue = new PROC_SavingsPersonalInformationRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pTelefonoNew = pTelefonoNew;
             inValue.pEmailNew = pEmailNew;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsPersonalInformationAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsPersonalInformationAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_MovementsResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Movements(global::TestService.WebServiInficaja.PROC_MovementsRequest request) {
+        PROC_MovementsResponse WebServiInficajaSOAPPortType.PROC_Movements(PROC_MovementsRequest request) {
             return base.Channel.PROC_Movements(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_Movimientos[] PROC_Movements(int pCliente, string pTelefono, int pCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_MovementsRequest inValue = new global::TestService.WebServiInficaja.PROC_MovementsRequest();
+        public ST_Movimientos[] PROC_Movements(int pCliente, string pTelefono, int pCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
+            PROC_MovementsRequest inValue = new PROC_MovementsRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pCuenta = pCuenta;
@@ -5856,17 +5856,17 @@ namespace TestService.WebServiInficaja {
             inValue.pPrestamo = pPrestamo;
             inValue.pPlazoFijo = pPlazoFijo;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_MovementsResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Movements(inValue);
+            PROC_MovementsResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_Movements(inValue);
             return retVal.PROC_MovementsResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_MovementsResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_MovementsAsync(global::TestService.WebServiInficaja.PROC_MovementsRequest request) {
+        System.Threading.Tasks.Task<PROC_MovementsResponse> WebServiInficajaSOAPPortType.PROC_MovementsAsync(PROC_MovementsRequest request) {
             return base.Channel.PROC_MovementsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_MovementsResponse> PROC_MovementsAsync(int pCliente, string pTelefono, int pCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_MovementsRequest inValue = new global::TestService.WebServiInficaja.PROC_MovementsRequest();
+        public System.Threading.Tasks.Task<PROC_MovementsResponse> PROC_MovementsAsync(int pCliente, string pTelefono, int pCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
+            PROC_MovementsRequest inValue = new PROC_MovementsRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pCuenta = pCuenta;
@@ -5875,15 +5875,15 @@ namespace TestService.WebServiInficaja {
             inValue.pPrestamo = pPrestamo;
             inValue.pPlazoFijo = pPlazoFijo;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_MovementsAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_MovementsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_TransfersResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Transfers(global::TestService.WebServiInficaja.PROC_TransfersRequest request) {
+        PROC_TransfersResponse WebServiInficajaSOAPPortType.PROC_Transfers(PROC_TransfersRequest request) {
             return base.Channel.PROC_Transfers(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_Transfers[] PROC_Transfers(
+        public ST_Transfers[] PROC_Transfers(
                     string PUsuarioSistema, 
                     string PLicenciaSistema, 
                     int PCuenta, 
@@ -5900,7 +5900,7 @@ namespace TestService.WebServiInficaja {
                     string sPCuentaClabeDestino, 
                     string sPTipoProceso, 
                     string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_TransfersRequest inValue = new global::TestService.WebServiInficaja.PROC_TransfersRequest();
+            PROC_TransfersRequest inValue = new PROC_TransfersRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PCuenta = PCuenta;
@@ -5917,16 +5917,16 @@ namespace TestService.WebServiInficaja {
             inValue.sPCuentaClabeDestino = sPCuentaClabeDestino;
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_TransfersResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Transfers(inValue);
+            PROC_TransfersResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_Transfers(inValue);
             return retVal.PROC_TransfersResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_TransfersResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_TransfersAsync(global::TestService.WebServiInficaja.PROC_TransfersRequest request) {
+        System.Threading.Tasks.Task<PROC_TransfersResponse> WebServiInficajaSOAPPortType.PROC_TransfersAsync(PROC_TransfersRequest request) {
             return base.Channel.PROC_TransfersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_TransfersResponse> PROC_TransfersAsync(
+        public System.Threading.Tasks.Task<PROC_TransfersResponse> PROC_TransfersAsync(
                     string PUsuarioSistema, 
                     string PLicenciaSistema, 
                     int PCuenta, 
@@ -5943,7 +5943,7 @@ namespace TestService.WebServiInficaja {
                     string sPCuentaClabeDestino, 
                     string sPTipoProceso, 
                     string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_TransfersRequest inValue = new global::TestService.WebServiInficaja.PROC_TransfersRequest();
+            PROC_TransfersRequest inValue = new PROC_TransfersRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PCuenta = PCuenta;
@@ -5960,71 +5960,71 @@ namespace TestService.WebServiInficaja {
             inValue.sPCuentaClabeDestino = sPCuentaClabeDestino;
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_TransfersAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_TransfersAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_DataClient_txtResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataClient_txt(global::TestService.WebServiInficaja.PROC_DataClient_txtRequest request) {
+        PROC_DataClient_txtResponse WebServiInficajaSOAPPortType.PROC_DataClient_txt(PROC_DataClient_txtRequest request) {
             return base.Channel.PROC_DataClient_txt(request);
         }
         
         public string PROC_DataClient_txt(int PCliente, string PTelefono, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataClient_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_DataClient_txtRequest();
+            PROC_DataClient_txtRequest inValue = new PROC_DataClient_txtRequest();
             inValue.PCliente = PCliente;
             inValue.PTelefono = PTelefono;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_DataClient_txtResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataClient_txt(inValue);
+            PROC_DataClient_txtResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_DataClient_txt(inValue);
             return retVal.PROC_DataClient_txtResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataClient_txtResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataClient_txtAsync(global::TestService.WebServiInficaja.PROC_DataClient_txtRequest request) {
+        System.Threading.Tasks.Task<PROC_DataClient_txtResponse> WebServiInficajaSOAPPortType.PROC_DataClient_txtAsync(PROC_DataClient_txtRequest request) {
             return base.Channel.PROC_DataClient_txtAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataClient_txtResponse> PROC_DataClient_txtAsync(int PCliente, string PTelefono, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataClient_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_DataClient_txtRequest();
+        public System.Threading.Tasks.Task<PROC_DataClient_txtResponse> PROC_DataClient_txtAsync(int PCliente, string PTelefono, string pLlaveConexion) {
+            PROC_DataClient_txtRequest inValue = new PROC_DataClient_txtRequest();
             inValue.PCliente = PCliente;
             inValue.PTelefono = PTelefono;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataClient_txtAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_DataClient_txtAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_DataBalance_txtResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataBalance_txt(global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest request) {
+        PROC_DataBalance_txtResponse WebServiInficajaSOAPPortType.PROC_DataBalance_txt(PROC_DataBalance_txtRequest request) {
             return base.Channel.PROC_DataBalance_txt(request);
         }
         
         public string PROC_DataBalance_txt(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest();
+            PROC_DataBalance_txtRequest inValue = new PROC_DataBalance_txtRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pCuenta = pCuenta;
             inValue.pInversion = pInversion;
             inValue.pDocumento = pDocumento;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_DataBalance_txtResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataBalance_txt(inValue);
+            PROC_DataBalance_txtResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_DataBalance_txt(inValue);
             return retVal.PROC_DataBalance_txtResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataBalance_txtResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_DataBalance_txtAsync(global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest request) {
+        System.Threading.Tasks.Task<PROC_DataBalance_txtResponse> WebServiInficajaSOAPPortType.PROC_DataBalance_txtAsync(PROC_DataBalance_txtRequest request) {
             return base.Channel.PROC_DataBalance_txtAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_DataBalance_txtResponse> PROC_DataBalance_txtAsync(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_DataBalance_txtRequest();
+        public System.Threading.Tasks.Task<PROC_DataBalance_txtResponse> PROC_DataBalance_txtAsync(int pCliente, string pTelefono, int pCuenta, int pInversion, int pDocumento, string pLlaveConexion) {
+            PROC_DataBalance_txtRequest inValue = new PROC_DataBalance_txtRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pCuenta = pCuenta;
             inValue.pInversion = pInversion;
             inValue.pDocumento = pDocumento;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_DataBalance_txtAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_DataBalance_txtAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_Transfers_txtResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Transfers_txt(global::TestService.WebServiInficaja.PROC_Transfers_txtRequest request) {
+        PROC_Transfers_txtResponse WebServiInficajaSOAPPortType.PROC_Transfers_txt(PROC_Transfers_txtRequest request) {
             return base.Channel.PROC_Transfers_txt(request);
         }
         
@@ -6045,7 +6045,7 @@ namespace TestService.WebServiInficaja {
                     string sPCuentaClabeDestino, 
                     string sPTipoProceso, 
                     string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_Transfers_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_Transfers_txtRequest();
+            PROC_Transfers_txtRequest inValue = new PROC_Transfers_txtRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PCuenta = PCuenta;
@@ -6062,16 +6062,16 @@ namespace TestService.WebServiInficaja {
             inValue.sPCuentaClabeDestino = sPCuentaClabeDestino;
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_Transfers_txtResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Transfers_txt(inValue);
+            PROC_Transfers_txtResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_Transfers_txt(inValue);
             return retVal.PROC_Transfers_txtResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_Transfers_txtResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Transfers_txtAsync(global::TestService.WebServiInficaja.PROC_Transfers_txtRequest request) {
+        System.Threading.Tasks.Task<PROC_Transfers_txtResponse> WebServiInficajaSOAPPortType.PROC_Transfers_txtAsync(PROC_Transfers_txtRequest request) {
             return base.Channel.PROC_Transfers_txtAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_Transfers_txtResponse> PROC_Transfers_txtAsync(
+        public System.Threading.Tasks.Task<PROC_Transfers_txtResponse> PROC_Transfers_txtAsync(
                     string PUsuarioSistema, 
                     string PLicenciaSistema, 
                     int PCuenta, 
@@ -6088,7 +6088,7 @@ namespace TestService.WebServiInficaja {
                     string sPCuentaClabeDestino, 
                     string sPTipoProceso, 
                     string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_Transfers_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_Transfers_txtRequest();
+            PROC_Transfers_txtRequest inValue = new PROC_Transfers_txtRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PCuenta = PCuenta;
@@ -6105,16 +6105,16 @@ namespace TestService.WebServiInficaja {
             inValue.sPCuentaClabeDestino = sPCuentaClabeDestino;
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Transfers_txtAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_Transfers_txtAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_Movements_txtResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Movements_txt(global::TestService.WebServiInficaja.PROC_Movements_txtRequest request) {
+        PROC_Movements_txtResponse WebServiInficajaSOAPPortType.PROC_Movements_txt(PROC_Movements_txtRequest request) {
             return base.Channel.PROC_Movements_txt(request);
         }
         
         public string PROC_Movements_txt(int PCliente, string PTelefono, int PCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_Movements_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_Movements_txtRequest();
+            PROC_Movements_txtRequest inValue = new PROC_Movements_txtRequest();
             inValue.PCliente = PCliente;
             inValue.PTelefono = PTelefono;
             inValue.PCuenta = PCuenta;
@@ -6123,17 +6123,17 @@ namespace TestService.WebServiInficaja {
             inValue.pPrestamo = pPrestamo;
             inValue.pPlazoFijo = pPlazoFijo;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_Movements_txtResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Movements_txt(inValue);
+            PROC_Movements_txtResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_Movements_txt(inValue);
             return retVal.PROC_Movements_txtResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_Movements_txtResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Movements_txtAsync(global::TestService.WebServiInficaja.PROC_Movements_txtRequest request) {
+        System.Threading.Tasks.Task<PROC_Movements_txtResponse> WebServiInficajaSOAPPortType.PROC_Movements_txtAsync(PROC_Movements_txtRequest request) {
             return base.Channel.PROC_Movements_txtAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_Movements_txtResponse> PROC_Movements_txtAsync(int PCliente, string PTelefono, int PCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_Movements_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_Movements_txtRequest();
+        public System.Threading.Tasks.Task<PROC_Movements_txtResponse> PROC_Movements_txtAsync(int PCliente, string PTelefono, int PCuenta, string pDesde, string pHasta, int pPrestamo, int pPlazoFijo, string pLlaveConexion) {
+            PROC_Movements_txtRequest inValue = new PROC_Movements_txtRequest();
             inValue.PCliente = PCliente;
             inValue.PTelefono = PTelefono;
             inValue.PCuenta = PCuenta;
@@ -6142,16 +6142,16 @@ namespace TestService.WebServiInficaja {
             inValue.pPrestamo = pPrestamo;
             inValue.pPlazoFijo = pPlazoFijo;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Movements_txtAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_Movements_txtAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CtasTercerosAltaSPEI(global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest request) {
+        PROC_CtasTercerosAltaSPEIResponse WebServiInficajaSOAPPortType.PROC_CtasTercerosAltaSPEI(PROC_CtasTercerosAltaSPEIRequest request) {
             return base.Channel.PROC_CtasTercerosAltaSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_AltaCtasTerceros[] PROC_CtasTercerosAltaSPEI(int nPCliente, string sPTelefono, string sPClabeDestino, string sPNombreDestino, string sPClaveBanco, string sPNombreBanco, string rPMaximo, string bPNotificar, string sPCelular, string sPEmail, string sPToken) {
-            global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest();
+        public ST_AltaCtasTerceros[] PROC_CtasTercerosAltaSPEI(int nPCliente, string sPTelefono, string sPClabeDestino, string sPNombreDestino, string sPClaveBanco, string sPNombreBanco, string rPMaximo, string bPNotificar, string sPCelular, string sPEmail, string sPToken) {
+            PROC_CtasTercerosAltaSPEIRequest inValue = new PROC_CtasTercerosAltaSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClabeDestino = sPClabeDestino;
@@ -6163,17 +6163,17 @@ namespace TestService.WebServiInficaja {
             inValue.sPCelular = sPCelular;
             inValue.sPEmail = sPEmail;
             inValue.sPToken = sPToken;
-            global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosAltaSPEI(inValue);
+            PROC_CtasTercerosAltaSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosAltaSPEI(inValue);
             return retVal.PROC_CtasTercerosAltaSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CtasTercerosAltaSPEIAsync(global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_CtasTercerosAltaSPEIResponse> WebServiInficajaSOAPPortType.PROC_CtasTercerosAltaSPEIAsync(PROC_CtasTercerosAltaSPEIRequest request) {
             return base.Channel.PROC_CtasTercerosAltaSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIResponse> PROC_CtasTercerosAltaSPEIAsync(int nPCliente, string sPTelefono, string sPClabeDestino, string sPNombreDestino, string sPClaveBanco, string sPNombreBanco, string rPMaximo, string bPNotificar, string sPCelular, string sPEmail, string sPToken) {
-            global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_CtasTercerosAltaSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_CtasTercerosAltaSPEIResponse> PROC_CtasTercerosAltaSPEIAsync(int nPCliente, string sPTelefono, string sPClabeDestino, string sPNombreDestino, string sPClaveBanco, string sPNombreBanco, string rPMaximo, string bPNotificar, string sPCelular, string sPEmail, string sPToken) {
+            PROC_CtasTercerosAltaSPEIRequest inValue = new PROC_CtasTercerosAltaSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClabeDestino = sPClabeDestino;
@@ -6185,126 +6185,126 @@ namespace TestService.WebServiInficaja {
             inValue.sPCelular = sPCelular;
             inValue.sPEmail = sPEmail;
             inValue.sPToken = sPToken;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosAltaSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosAltaSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CtasTercerosBajaSPEI(global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest request) {
+        PROC_CtasTercerosBajaSPEIResponse WebServiInficajaSOAPPortType.PROC_CtasTercerosBajaSPEI(PROC_CtasTercerosBajaSPEIRequest request) {
             return base.Channel.PROC_CtasTercerosBajaSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_BajaCtasTerceros[] PROC_CtasTercerosBajaSPEI(int nPCliente, string sPTelefono, string sPClabeDestino, string sPToken) {
-            global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest();
+        public ST_BajaCtasTerceros[] PROC_CtasTercerosBajaSPEI(int nPCliente, string sPTelefono, string sPClabeDestino, string sPToken) {
+            PROC_CtasTercerosBajaSPEIRequest inValue = new PROC_CtasTercerosBajaSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClabeDestino = sPClabeDestino;
             inValue.sPToken = sPToken;
-            global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosBajaSPEI(inValue);
+            PROC_CtasTercerosBajaSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosBajaSPEI(inValue);
             return retVal.PROC_CtasTercerosBajaSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CtasTercerosBajaSPEIAsync(global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_CtasTercerosBajaSPEIResponse> WebServiInficajaSOAPPortType.PROC_CtasTercerosBajaSPEIAsync(PROC_CtasTercerosBajaSPEIRequest request) {
             return base.Channel.PROC_CtasTercerosBajaSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIResponse> PROC_CtasTercerosBajaSPEIAsync(int nPCliente, string sPTelefono, string sPClabeDestino, string sPToken) {
-            global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_CtasTercerosBajaSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_CtasTercerosBajaSPEIResponse> PROC_CtasTercerosBajaSPEIAsync(int nPCliente, string sPTelefono, string sPClabeDestino, string sPToken) {
+            PROC_CtasTercerosBajaSPEIRequest inValue = new PROC_CtasTercerosBajaSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClabeDestino = sPClabeDestino;
             inValue.sPToken = sPToken;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosBajaSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_CtasTercerosBajaSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ListadoCtasTercerosSPEI(global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest request) {
+        PROC_ListadoCtasTercerosSPEIResponse WebServiInficajaSOAPPortType.PROC_ListadoCtasTercerosSPEI(PROC_ListadoCtasTercerosSPEIRequest request) {
             return base.Channel.PROC_ListadoCtasTercerosSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_ListadoCtasTerceros[] PROC_ListadoCtasTercerosSPEI(int nPCliente, string sPTelefono, string sPClabeDestino, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest();
+        public ST_ListadoCtasTerceros[] PROC_ListadoCtasTercerosSPEI(int nPCliente, string sPTelefono, string sPClabeDestino, string pLlaveConexion) {
+            PROC_ListadoCtasTercerosSPEIRequest inValue = new PROC_ListadoCtasTercerosSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClabeDestino = sPClabeDestino;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ListadoCtasTercerosSPEI(inValue);
+            PROC_ListadoCtasTercerosSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_ListadoCtasTercerosSPEI(inValue);
             return retVal.PROC_ListadoCtasTercerosSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ListadoCtasTercerosSPEIAsync(global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_ListadoCtasTercerosSPEIResponse> WebServiInficajaSOAPPortType.PROC_ListadoCtasTercerosSPEIAsync(PROC_ListadoCtasTercerosSPEIRequest request) {
             return base.Channel.PROC_ListadoCtasTercerosSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIResponse> PROC_ListadoCtasTercerosSPEIAsync(int nPCliente, string sPTelefono, string sPClabeDestino, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_ListadoCtasTercerosSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_ListadoCtasTercerosSPEIResponse> PROC_ListadoCtasTercerosSPEIAsync(int nPCliente, string sPTelefono, string sPClabeDestino, string pLlaveConexion) {
+            PROC_ListadoCtasTercerosSPEIRequest inValue = new PROC_ListadoCtasTercerosSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClabeDestino = sPClabeDestino;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ListadoCtasTercerosSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_ListadoCtasTercerosSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_TokenResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_Token(global::TestService.WebServiInficaja.PROC_TokenRequest request) {
+        PROC_TokenResponse WebServiInficajaSOAPPortType.PROC_Token(PROC_TokenRequest request) {
             return base.Channel.PROC_Token(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_Token[] PROC_Token(string pCliente, string pCodigo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_TokenRequest inValue = new global::TestService.WebServiInficaja.PROC_TokenRequest();
+        public ST_Token[] PROC_Token(int pCliente, string pCodigo, string pLlaveConexion) {
+            PROC_TokenRequest inValue = new PROC_TokenRequest();
             inValue.pCliente = pCliente;
             inValue.pCodigo = pCodigo;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_TokenResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_Token(inValue);
+            PROC_TokenResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_Token(inValue);
             return retVal.PROC_TokenResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_TokenResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_TokenAsync(global::TestService.WebServiInficaja.PROC_TokenRequest request) {
+        System.Threading.Tasks.Task<PROC_TokenResponse> WebServiInficajaSOAPPortType.PROC_TokenAsync(PROC_TokenRequest request) {
             return base.Channel.PROC_TokenAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_TokenResponse> PROC_TokenAsync(string pCliente, string pCodigo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_TokenRequest inValue = new global::TestService.WebServiInficaja.PROC_TokenRequest();
+        public System.Threading.Tasks.Task<PROC_TokenResponse> PROC_TokenAsync(int pCliente, string pCodigo, string pLlaveConexion) {
+            PROC_TokenRequest inValue = new PROC_TokenRequest();
             inValue.pCliente = pCliente;
             inValue.pCodigo = pCodigo;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_TokenAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_TokenAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_CtaClabeCteResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CtaClabeCte(global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest request) {
+        PROC_CtaClabeCteResponse WebServiInficajaSOAPPortType.PROC_CtaClabeCte(PROC_CtaClabeCteRequest request) {
             return base.Channel.PROC_CtaClabeCte(request);
         }
         
         public string PROC_CtaClabeCte(string pCtaClabe, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest inValue = new global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest();
+            PROC_CtaClabeCteRequest inValue = new PROC_CtaClabeCteRequest();
             inValue.pCtaClabe = pCtaClabe;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_CtaClabeCteResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CtaClabeCte(inValue);
+            PROC_CtaClabeCteResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_CtaClabeCte(inValue);
             return retVal.PROC_CtaClabeCteResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtaClabeCteResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CtaClabeCteAsync(global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest request) {
+        System.Threading.Tasks.Task<PROC_CtaClabeCteResponse> WebServiInficajaSOAPPortType.PROC_CtaClabeCteAsync(PROC_CtaClabeCteRequest request) {
             return base.Channel.PROC_CtaClabeCteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CtaClabeCteResponse> PROC_CtaClabeCteAsync(string pCtaClabe, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest inValue = new global::TestService.WebServiInficaja.PROC_CtaClabeCteRequest();
+        public System.Threading.Tasks.Task<PROC_CtaClabeCteResponse> PROC_CtaClabeCteAsync(string pCtaClabe, string pLlaveConexion) {
+            PROC_CtaClabeCteRequest inValue = new PROC_CtaClabeCteRequest();
             inValue.pCtaClabe = pCtaClabe;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CtaClabeCteAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_CtaClabeCteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsAccountsSPEI(global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest request) {
+        PROC_SavingsAccountsSPEIResponse WebServiInficajaSOAPPortType.PROC_SavingsAccountsSPEI(PROC_SavingsAccountsSPEIRequest request) {
             return base.Channel.PROC_SavingsAccountsSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_SavingsAccounts[] PROC_SavingsAccountsSPEI(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest();
+        public ST_SavingsAccounts[] PROC_SavingsAccountsSPEI(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
+            PROC_SavingsAccountsSPEIRequest inValue = new PROC_SavingsAccountsSPEIRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.pCuenta = pCuenta;
@@ -6320,17 +6320,17 @@ namespace TestService.WebServiInficaja {
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.cyPMontoComision = cyPMontoComision;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccountsSPEI(inValue);
+            PROC_SavingsAccountsSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccountsSPEI(inValue);
             return retVal.PROC_SavingsAccountsSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsAccountsSPEIAsync(global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_SavingsAccountsSPEIResponse> WebServiInficajaSOAPPortType.PROC_SavingsAccountsSPEIAsync(PROC_SavingsAccountsSPEIRequest request) {
             return base.Channel.PROC_SavingsAccountsSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIResponse> PROC_SavingsAccountsSPEIAsync(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsAccountsSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_SavingsAccountsSPEIResponse> PROC_SavingsAccountsSPEIAsync(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
+            PROC_SavingsAccountsSPEIRequest inValue = new PROC_SavingsAccountsSPEIRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.pCuenta = pCuenta;
@@ -6346,16 +6346,16 @@ namespace TestService.WebServiInficaja {
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.cyPMontoComision = cyPMontoComision;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccountsSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccountsSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CreditPaymentsSPEI(global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest request) {
+        PROC_CreditPaymentsSPEIResponse WebServiInficajaSOAPPortType.PROC_CreditPaymentsSPEI(PROC_CreditPaymentsSPEIRequest request) {
             return base.Channel.PROC_CreditPaymentsSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_PagoCredito[] PROC_CreditPaymentsSPEI(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string sPNota, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest();
+        public ST_PagoCredito[] PROC_CreditPaymentsSPEI(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string sPNota, string pLlaveConexion) {
+            PROC_CreditPaymentsSPEIRequest inValue = new PROC_CreditPaymentsSPEIRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PDocumento = PDocumento;
@@ -6365,17 +6365,17 @@ namespace TestService.WebServiInficaja {
             inValue.sPtoken = sPtoken;
             inValue.sPNota = sPNota;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CreditPaymentsSPEI(inValue);
+            PROC_CreditPaymentsSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_CreditPaymentsSPEI(inValue);
             return retVal.PROC_CreditPaymentsSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CreditPaymentsSPEIAsync(global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_CreditPaymentsSPEIResponse> WebServiInficajaSOAPPortType.PROC_CreditPaymentsSPEIAsync(PROC_CreditPaymentsSPEIRequest request) {
             return base.Channel.PROC_CreditPaymentsSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIResponse> PROC_CreditPaymentsSPEIAsync(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string sPNota, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_CreditPaymentsSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_CreditPaymentsSPEIResponse> PROC_CreditPaymentsSPEIAsync(string PUsuarioSistema, string PLicenciaSistema, int PDocumento, int pCliente, string pTelefono, decimal PAbono, string sPtoken, string sPNota, string pLlaveConexion) {
+            PROC_CreditPaymentsSPEIRequest inValue = new PROC_CreditPaymentsSPEIRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.PDocumento = PDocumento;
@@ -6385,45 +6385,45 @@ namespace TestService.WebServiInficaja {
             inValue.sPtoken = sPtoken;
             inValue.sPNota = sPNota;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CreditPaymentsSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_CreditPaymentsSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_EnviarSMSResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_EnviarSMS(global::TestService.WebServiInficaja.PROC_EnviarSMSRequest request) {
+        PROC_EnviarSMSResponse WebServiInficajaSOAPPortType.PROC_EnviarSMS(PROC_EnviarSMSRequest request) {
             return base.Channel.PROC_EnviarSMS(request);
         }
         
         public string PROC_EnviarSMS(string pCodigoActivacion, string pTelefono, string pAsunto, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_EnviarSMSRequest inValue = new global::TestService.WebServiInficaja.PROC_EnviarSMSRequest();
+            PROC_EnviarSMSRequest inValue = new PROC_EnviarSMSRequest();
             inValue.pCodigoActivacion = pCodigoActivacion;
             inValue.pTelefono = pTelefono;
             inValue.pAsunto = pAsunto;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_EnviarSMSResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_EnviarSMS(inValue);
+            PROC_EnviarSMSResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_EnviarSMS(inValue);
             return retVal.PROC_EnviarSMSResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_EnviarSMSResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_EnviarSMSAsync(global::TestService.WebServiInficaja.PROC_EnviarSMSRequest request) {
+        System.Threading.Tasks.Task<PROC_EnviarSMSResponse> WebServiInficajaSOAPPortType.PROC_EnviarSMSAsync(PROC_EnviarSMSRequest request) {
             return base.Channel.PROC_EnviarSMSAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_EnviarSMSResponse> PROC_EnviarSMSAsync(string pCodigoActivacion, string pTelefono, string pAsunto, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_EnviarSMSRequest inValue = new global::TestService.WebServiInficaja.PROC_EnviarSMSRequest();
+        public System.Threading.Tasks.Task<PROC_EnviarSMSResponse> PROC_EnviarSMSAsync(string pCodigoActivacion, string pTelefono, string pAsunto, string pLlaveConexion) {
+            PROC_EnviarSMSRequest inValue = new PROC_EnviarSMSRequest();
             inValue.pCodigoActivacion = pCodigoActivacion;
             inValue.pTelefono = pTelefono;
             inValue.pAsunto = pAsunto;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_EnviarSMSAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_EnviarSMSAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsAccounts_txt(global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest request) {
+        PROC_SavingsAccounts_txtResponse WebServiInficajaSOAPPortType.PROC_SavingsAccounts_txt(PROC_SavingsAccounts_txtRequest request) {
             return base.Channel.PROC_SavingsAccounts_txt(request);
         }
         
         public string PROC_SavingsAccounts_txt(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest();
+            PROC_SavingsAccounts_txtRequest inValue = new PROC_SavingsAccounts_txtRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.pCuenta = pCuenta;
@@ -6439,17 +6439,17 @@ namespace TestService.WebServiInficaja {
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.cyPMontoComision = cyPMontoComision;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccounts_txt(inValue);
+            PROC_SavingsAccounts_txtResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccounts_txt(inValue);
             return retVal.PROC_SavingsAccounts_txtResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_SavingsAccounts_txtAsync(global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest request) {
+        System.Threading.Tasks.Task<PROC_SavingsAccounts_txtResponse> WebServiInficajaSOAPPortType.PROC_SavingsAccounts_txtAsync(PROC_SavingsAccounts_txtRequest request) {
             return base.Channel.PROC_SavingsAccounts_txtAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtResponse> PROC_SavingsAccounts_txtAsync(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest inValue = new global::TestService.WebServiInficaja.PROC_SavingsAccounts_txtRequest();
+        public System.Threading.Tasks.Task<PROC_SavingsAccounts_txtResponse> PROC_SavingsAccounts_txtAsync(string PUsuarioSistema, string PLicenciaSistema, int pCuenta, int pCliente, string pTelefono, int pInversion, string PNota, string PCodeBar, decimal PRetiro, decimal PDeposito, string PToken, string sPCuentaClabeDestino, string sPTipoProceso, decimal cyPMontoComision, string pLlaveConexion) {
+            PROC_SavingsAccounts_txtRequest inValue = new PROC_SavingsAccounts_txtRequest();
             inValue.PUsuarioSistema = PUsuarioSistema;
             inValue.PLicenciaSistema = PLicenciaSistema;
             inValue.pCuenta = pCuenta;
@@ -6465,45 +6465,45 @@ namespace TestService.WebServiInficaja {
             inValue.sPTipoProceso = sPTipoProceso;
             inValue.cyPMontoComision = cyPMontoComision;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccounts_txtAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_SavingsAccounts_txtAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ListadoBancosSPEI(global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest request) {
+        PROC_ListadoBancosSPEIResponse WebServiInficajaSOAPPortType.PROC_ListadoBancosSPEI(PROC_ListadoBancosSPEIRequest request) {
             return base.Channel.PROC_ListadoBancosSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_BancosSPEI[] PROC_ListadoBancosSPEI(int nPCliente, string sPTelefono, string sPClave, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest();
+        public ST_BancosSPEI[] PROC_ListadoBancosSPEI(int nPCliente, string sPTelefono, string sPClave, string pLlaveConexion) {
+            PROC_ListadoBancosSPEIRequest inValue = new PROC_ListadoBancosSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClave = sPClave;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ListadoBancosSPEI(inValue);
+            PROC_ListadoBancosSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_ListadoBancosSPEI(inValue);
             return retVal.PROC_ListadoBancosSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ListadoBancosSPEIAsync(global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_ListadoBancosSPEIResponse> WebServiInficajaSOAPPortType.PROC_ListadoBancosSPEIAsync(PROC_ListadoBancosSPEIRequest request) {
             return base.Channel.PROC_ListadoBancosSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIResponse> PROC_ListadoBancosSPEIAsync(int nPCliente, string sPTelefono, string sPClave, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_ListadoBancosSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_ListadoBancosSPEIResponse> PROC_ListadoBancosSPEIAsync(int nPCliente, string sPTelefono, string sPClave, string pLlaveConexion) {
+            PROC_ListadoBancosSPEIRequest inValue = new PROC_ListadoBancosSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPClave = sPClave;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ListadoBancosSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_ListadoBancosSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_OrdenesPagoSPEI(global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest request) {
+        PROC_OrdenesPagoSPEIResponse WebServiInficajaSOAPPortType.PROC_OrdenesPagoSPEI(PROC_OrdenesPagoSPEIRequest request) {
             return base.Channel.PROC_OrdenesPagoSPEI(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_EnvioSPEI[] PROC_OrdenesPagoSPEI(int nPCliente, string sPTelefono, string sPCuentaClabeOrigen, string sPConcepto, decimal cyPMonto, decimal cyComision, string sPToken, string sPCuentaClabeDestino, string sClaveBancoDestino, string sNombreBancoDestino, string sNombreBeneficiario, string spAplicacion, string spLatitud, string spLongitud, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest();
+        public ST_EnvioSPEI[] PROC_OrdenesPagoSPEI(int nPCliente, string sPTelefono, string sPCuentaClabeOrigen, string sPConcepto, decimal cyPMonto, decimal cyComision, string sPToken, string sPCuentaClabeDestino, string sClaveBancoDestino, string sNombreBancoDestino, string sNombreBeneficiario, string spAplicacion, string spLatitud, string spLongitud, string pLlaveConexion) {
+            PROC_OrdenesPagoSPEIRequest inValue = new PROC_OrdenesPagoSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPCuentaClabeOrigen = sPCuentaClabeOrigen;
@@ -6519,17 +6519,17 @@ namespace TestService.WebServiInficaja {
             inValue.spLatitud = spLatitud;
             inValue.spLongitud = spLongitud;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_OrdenesPagoSPEI(inValue);
+            PROC_OrdenesPagoSPEIResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_OrdenesPagoSPEI(inValue);
             return retVal.PROC_OrdenesPagoSPEIResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_OrdenesPagoSPEIAsync(global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest request) {
+        System.Threading.Tasks.Task<PROC_OrdenesPagoSPEIResponse> WebServiInficajaSOAPPortType.PROC_OrdenesPagoSPEIAsync(PROC_OrdenesPagoSPEIRequest request) {
             return base.Channel.PROC_OrdenesPagoSPEIAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIResponse> PROC_OrdenesPagoSPEIAsync(int nPCliente, string sPTelefono, string sPCuentaClabeOrigen, string sPConcepto, decimal cyPMonto, decimal cyComision, string sPToken, string sPCuentaClabeDestino, string sClaveBancoDestino, string sNombreBancoDestino, string sNombreBeneficiario, string spAplicacion, string spLatitud, string spLongitud, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest inValue = new global::TestService.WebServiInficaja.PROC_OrdenesPagoSPEIRequest();
+        public System.Threading.Tasks.Task<PROC_OrdenesPagoSPEIResponse> PROC_OrdenesPagoSPEIAsync(int nPCliente, string sPTelefono, string sPCuentaClabeOrigen, string sPConcepto, decimal cyPMonto, decimal cyComision, string sPToken, string sPCuentaClabeDestino, string sClaveBancoDestino, string sNombreBancoDestino, string sNombreBeneficiario, string spAplicacion, string spLatitud, string spLongitud, string pLlaveConexion) {
+            PROC_OrdenesPagoSPEIRequest inValue = new PROC_OrdenesPagoSPEIRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.sPCuentaClabeOrigen = sPCuentaClabeOrigen;
@@ -6545,74 +6545,74 @@ namespace TestService.WebServiInficaja {
             inValue.spLatitud = spLatitud;
             inValue.spLongitud = spLongitud;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_OrdenesPagoSPEIAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_OrdenesPagoSPEIAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_CargaEdoCtasResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CargaEdoCtas(global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest request) {
+        PROC_CargaEdoCtasResponse WebServiInficajaSOAPPortType.PROC_CargaEdoCtas(PROC_CargaEdoCtasRequest request) {
             return base.Channel.PROC_CargaEdoCtas(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_CargaEdoCtas[] PROC_CargaEdoCtas(int nPCliente, string sPTelefono, int nPCuenta, string pCadenapermiso) {
-            global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest inValue = new global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest();
+        public ST_CargaEdoCtas[] PROC_CargaEdoCtas(int nPCliente, string sPTelefono, int nPCuenta, string pCadenapermiso) {
+            PROC_CargaEdoCtasRequest inValue = new PROC_CargaEdoCtasRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.nPCuenta = nPCuenta;
             inValue.pCadenapermiso = pCadenapermiso;
-            global::TestService.WebServiInficaja.PROC_CargaEdoCtasResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CargaEdoCtas(inValue);
+            PROC_CargaEdoCtasResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_CargaEdoCtas(inValue);
             return retVal.PROC_CargaEdoCtasResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CargaEdoCtasResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_CargaEdoCtasAsync(global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest request) {
+        System.Threading.Tasks.Task<PROC_CargaEdoCtasResponse> WebServiInficajaSOAPPortType.PROC_CargaEdoCtasAsync(PROC_CargaEdoCtasRequest request) {
             return base.Channel.PROC_CargaEdoCtasAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_CargaEdoCtasResponse> PROC_CargaEdoCtasAsync(int nPCliente, string sPTelefono, int nPCuenta, string pCadenapermiso) {
-            global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest inValue = new global::TestService.WebServiInficaja.PROC_CargaEdoCtasRequest();
+        public System.Threading.Tasks.Task<PROC_CargaEdoCtasResponse> PROC_CargaEdoCtasAsync(int nPCliente, string sPTelefono, int nPCuenta, string pCadenapermiso) {
+            PROC_CargaEdoCtasRequest inValue = new PROC_CargaEdoCtasRequest();
             inValue.nPCliente = nPCliente;
             inValue.sPTelefono = sPTelefono;
             inValue.nPCuenta = nPCuenta;
             inValue.pCadenapermiso = pCadenapermiso;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_CargaEdoCtasAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_CargaEdoCtasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_UpdatePassResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_UpdatePass(global::TestService.WebServiInficaja.PROC_UpdatePassRequest request) {
+        PROC_UpdatePassResponse WebServiInficajaSOAPPortType.PROC_UpdatePass(PROC_UpdatePassRequest request) {
             return base.Channel.PROC_UpdatePass(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_UpdatePass[] PROC_UpdatePass(string pCliente, string pToken, string pPassNew, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_UpdatePassRequest inValue = new global::TestService.WebServiInficaja.PROC_UpdatePassRequest();
+        public ST_UpdatePass[] PROC_UpdatePass(int pCliente, string pToken, string pPassNew, string pLlaveConexion) {
+            PROC_UpdatePassRequest inValue = new PROC_UpdatePassRequest();
             inValue.pCliente = pCliente;
             inValue.pToken = pToken;
             inValue.pPassNew = pPassNew;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_UpdatePassResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_UpdatePass(inValue);
+            PROC_UpdatePassResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_UpdatePass(inValue);
             return retVal.PROC_UpdatePassResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_UpdatePassResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_UpdatePassAsync(global::TestService.WebServiInficaja.PROC_UpdatePassRequest request) {
+        System.Threading.Tasks.Task<PROC_UpdatePassResponse> WebServiInficajaSOAPPortType.PROC_UpdatePassAsync(PROC_UpdatePassRequest request) {
             return base.Channel.PROC_UpdatePassAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_UpdatePassResponse> PROC_UpdatePassAsync(string pCliente, string pToken, string pPassNew, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_UpdatePassRequest inValue = new global::TestService.WebServiInficaja.PROC_UpdatePassRequest();
+        public System.Threading.Tasks.Task<PROC_UpdatePassResponse> PROC_UpdatePassAsync(int pCliente, string pToken, string pPassNew, string pLlaveConexion) {
+            PROC_UpdatePassRequest inValue = new PROC_UpdatePassRequest();
             inValue.pCliente = pCliente;
             inValue.pToken = pToken;
             inValue.pPassNew = pPassNew;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_UpdatePassAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_UpdatePassAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_BitacoraDeptoResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_BitacoraDepto(global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest request) {
+        PROC_BitacoraDeptoResponse WebServiInficajaSOAPPortType.PROC_BitacoraDepto(PROC_BitacoraDeptoRequest request) {
             return base.Channel.PROC_BitacoraDepto(request);
         }
         
         public string PROC_BitacoraDepto(string pCodigoActiva, string pUsuario, string pPC, string pRealizo, string pRecibio, string pAnotacion, string pTipoDocto, string pNumeroDocto, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest inValue = new global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest();
+            PROC_BitacoraDeptoRequest inValue = new PROC_BitacoraDeptoRequest();
             inValue.pCodigoActiva = pCodigoActiva;
             inValue.pUsuario = pUsuario;
             inValue.pPC = pPC;
@@ -6622,17 +6622,17 @@ namespace TestService.WebServiInficaja {
             inValue.pTipoDocto = pTipoDocto;
             inValue.pNumeroDocto = pNumeroDocto;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_BitacoraDeptoResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_BitacoraDepto(inValue);
+            PROC_BitacoraDeptoResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_BitacoraDepto(inValue);
             return retVal.PROC_BitacoraDeptoResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_BitacoraDeptoResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_BitacoraDeptoAsync(global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest request) {
+        System.Threading.Tasks.Task<PROC_BitacoraDeptoResponse> WebServiInficajaSOAPPortType.PROC_BitacoraDeptoAsync(PROC_BitacoraDeptoRequest request) {
             return base.Channel.PROC_BitacoraDeptoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_BitacoraDeptoResponse> PROC_BitacoraDeptoAsync(string pCodigoActiva, string pUsuario, string pPC, string pRealizo, string pRecibio, string pAnotacion, string pTipoDocto, string pNumeroDocto, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest inValue = new global::TestService.WebServiInficaja.PROC_BitacoraDeptoRequest();
+        public System.Threading.Tasks.Task<PROC_BitacoraDeptoResponse> PROC_BitacoraDeptoAsync(string pCodigoActiva, string pUsuario, string pPC, string pRealizo, string pRecibio, string pAnotacion, string pTipoDocto, string pNumeroDocto, string pLlaveConexion) {
+            PROC_BitacoraDeptoRequest inValue = new PROC_BitacoraDeptoRequest();
             inValue.pCodigoActiva = pCodigoActiva;
             inValue.pUsuario = pUsuario;
             inValue.pPC = pPC;
@@ -6642,182 +6642,182 @@ namespace TestService.WebServiInficaja {
             inValue.pTipoDocto = pTipoDocto;
             inValue.pNumeroDocto = pNumeroDocto;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_BitacoraDeptoAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_BitacoraDeptoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_GeneraLlaveConexion(global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest request) {
+        PROC_GeneraLlaveConexionResponse WebServiInficajaSOAPPortType.PROC_GeneraLlaveConexion(PROC_GeneraLlaveConexionRequest request) {
             return base.Channel.PROC_GeneraLlaveConexion(request);
         }
         
         public string PROC_GeneraLlaveConexion(string pClaveGeneraLlave, string pLlave) {
-            global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest inValue = new global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest();
+            PROC_GeneraLlaveConexionRequest inValue = new PROC_GeneraLlaveConexionRequest();
             inValue.pClaveGeneraLlave = pClaveGeneraLlave;
             inValue.pLlave = pLlave;
-            global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_GeneraLlaveConexion(inValue);
+            PROC_GeneraLlaveConexionResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_GeneraLlaveConexion(inValue);
             return retVal.PROC_GeneraLlaveConexionResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_GeneraLlaveConexionAsync(global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest request) {
+        System.Threading.Tasks.Task<PROC_GeneraLlaveConexionResponse> WebServiInficajaSOAPPortType.PROC_GeneraLlaveConexionAsync(PROC_GeneraLlaveConexionRequest request) {
             return base.Channel.PROC_GeneraLlaveConexionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionResponse> PROC_GeneraLlaveConexionAsync(string pClaveGeneraLlave, string pLlave) {
-            global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest inValue = new global::TestService.WebServiInficaja.PROC_GeneraLlaveConexionRequest();
+        public System.Threading.Tasks.Task<PROC_GeneraLlaveConexionResponse> PROC_GeneraLlaveConexionAsync(string pClaveGeneraLlave, string pLlave) {
+            PROC_GeneraLlaveConexionRequest inValue = new PROC_GeneraLlaveConexionRequest();
             inValue.pClaveGeneraLlave = pClaveGeneraLlave;
             inValue.pLlave = pLlave;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_GeneraLlaveConexionAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_GeneraLlaveConexionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_ValidaUsuarioResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ValidaUsuario(global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest request) {
+        PROC_ValidaUsuarioResponse WebServiInficajaSOAPPortType.PROC_ValidaUsuario(PROC_ValidaUsuarioRequest request) {
             return base.Channel.PROC_ValidaUsuario(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_ValidaUsuario[] PROC_ValidaUsuario(string pUsuario, string pContrasena, string pTipo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest inValue = new global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest();
+        public ST_ValidaUsuario[] PROC_ValidaUsuario(string pUsuario, string pContrasena, string pTipo, string pLlaveConexion) {
+            PROC_ValidaUsuarioRequest inValue = new PROC_ValidaUsuarioRequest();
             inValue.pUsuario = pUsuario;
             inValue.pContrasena = pContrasena;
             inValue.pTipo = pTipo;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_ValidaUsuarioResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ValidaUsuario(inValue);
+            PROC_ValidaUsuarioResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_ValidaUsuario(inValue);
             return retVal.PROC_ValidaUsuarioResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ValidaUsuarioResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_ValidaUsuarioAsync(global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest request) {
+        System.Threading.Tasks.Task<PROC_ValidaUsuarioResponse> WebServiInficajaSOAPPortType.PROC_ValidaUsuarioAsync(PROC_ValidaUsuarioRequest request) {
             return base.Channel.PROC_ValidaUsuarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_ValidaUsuarioResponse> PROC_ValidaUsuarioAsync(string pUsuario, string pContrasena, string pTipo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest inValue = new global::TestService.WebServiInficaja.PROC_ValidaUsuarioRequest();
+        public System.Threading.Tasks.Task<PROC_ValidaUsuarioResponse> PROC_ValidaUsuarioAsync(string pUsuario, string pContrasena, string pTipo, string pLlaveConexion) {
+            PROC_ValidaUsuarioRequest inValue = new PROC_ValidaUsuarioRequest();
             inValue.pUsuario = pUsuario;
             inValue.pContrasena = pContrasena;
             inValue.pTipo = pTipo;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_ValidaUsuarioAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_ValidaUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_PlanPagosResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_PlanPagos(global::TestService.WebServiInficaja.PROC_PlanPagosRequest request) {
+        PROC_PlanPagosResponse WebServiInficajaSOAPPortType.PROC_PlanPagos(PROC_PlanPagosRequest request) {
             return base.Channel.PROC_PlanPagos(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_PlanPagos[] PROC_PlanPagos(int pCliente, string pTelefono, int pDocumento, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_PlanPagosRequest inValue = new global::TestService.WebServiInficaja.PROC_PlanPagosRequest();
+        public ST_PlanPagos[] PROC_PlanPagos(int pCliente, string pTelefono, int pDocumento, string pLlaveConexion) {
+            PROC_PlanPagosRequest inValue = new PROC_PlanPagosRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pDocumento = pDocumento;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_PlanPagosResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_PlanPagos(inValue);
+            PROC_PlanPagosResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_PlanPagos(inValue);
             return retVal.PROC_PlanPagosResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_PlanPagosResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_PlanPagosAsync(global::TestService.WebServiInficaja.PROC_PlanPagosRequest request) {
+        System.Threading.Tasks.Task<PROC_PlanPagosResponse> WebServiInficajaSOAPPortType.PROC_PlanPagosAsync(PROC_PlanPagosRequest request) {
             return base.Channel.PROC_PlanPagosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_PlanPagosResponse> PROC_PlanPagosAsync(int pCliente, string pTelefono, int pDocumento, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_PlanPagosRequest inValue = new global::TestService.WebServiInficaja.PROC_PlanPagosRequest();
+        public System.Threading.Tasks.Task<PROC_PlanPagosResponse> PROC_PlanPagosAsync(int pCliente, string pTelefono, int pDocumento, string pLlaveConexion) {
+            PROC_PlanPagosRequest inValue = new PROC_PlanPagosRequest();
             inValue.pCliente = pCliente;
             inValue.pTelefono = pTelefono;
             inValue.pDocumento = pDocumento;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_PlanPagosAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_PlanPagosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_UpdateCelResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_UpdateCel(global::TestService.WebServiInficaja.PROC_UpdateCelRequest request) {
+        PROC_UpdateCelResponse WebServiInficajaSOAPPortType.PROC_UpdateCel(PROC_UpdateCelRequest request) {
             return base.Channel.PROC_UpdateCel(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_UpdateCel[] PROC_UpdateCel(string pCliente, string pCelular, string pCodigo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_UpdateCelRequest inValue = new global::TestService.WebServiInficaja.PROC_UpdateCelRequest();
+        public ST_UpdateCel[] PROC_UpdateCel(int pCliente, string pCelular, string pCodigo, string pLlaveConexion) {
+            PROC_UpdateCelRequest inValue = new PROC_UpdateCelRequest();
             inValue.pCliente = pCliente;
             inValue.pCelular = pCelular;
             inValue.pCodigo = pCodigo;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_UpdateCelResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_UpdateCel(inValue);
+            PROC_UpdateCelResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_UpdateCel(inValue);
             return retVal.PROC_UpdateCelResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_UpdateCelResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_UpdateCelAsync(global::TestService.WebServiInficaja.PROC_UpdateCelRequest request) {
+        System.Threading.Tasks.Task<PROC_UpdateCelResponse> WebServiInficajaSOAPPortType.PROC_UpdateCelAsync(PROC_UpdateCelRequest request) {
             return base.Channel.PROC_UpdateCelAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_UpdateCelResponse> PROC_UpdateCelAsync(string pCliente, string pCelular, string pCodigo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_UpdateCelRequest inValue = new global::TestService.WebServiInficaja.PROC_UpdateCelRequest();
+        public System.Threading.Tasks.Task<PROC_UpdateCelResponse> PROC_UpdateCelAsync(int pCliente, string pCelular, string pCodigo, string pLlaveConexion) {
+            PROC_UpdateCelRequest inValue = new PROC_UpdateCelRequest();
             inValue.pCliente = pCliente;
             inValue.pCelular = pCelular;
             inValue.pCodigo = pCodigo;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_UpdateCelAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_UpdateCelAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_LineaCelResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_LineaCel(global::TestService.WebServiInficaja.PROC_LineaCelRequest request) {
+        PROC_LineaCelResponse WebServiInficajaSOAPPortType.PROC_LineaCel(PROC_LineaCelRequest request) {
             return base.Channel.PROC_LineaCel(request);
         }
         
         public string PROC_LineaCel(string pCelular, string pRegistroSiNo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_LineaCelRequest inValue = new global::TestService.WebServiInficaja.PROC_LineaCelRequest();
+            PROC_LineaCelRequest inValue = new PROC_LineaCelRequest();
             inValue.pCelular = pCelular;
             inValue.pRegistroSiNo = pRegistroSiNo;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_LineaCelResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_LineaCel(inValue);
+            PROC_LineaCelResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_LineaCel(inValue);
             return retVal.PROC_LineaCelResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_LineaCelResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_LineaCelAsync(global::TestService.WebServiInficaja.PROC_LineaCelRequest request) {
+        System.Threading.Tasks.Task<PROC_LineaCelResponse> WebServiInficajaSOAPPortType.PROC_LineaCelAsync(PROC_LineaCelRequest request) {
             return base.Channel.PROC_LineaCelAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_LineaCelResponse> PROC_LineaCelAsync(string pCelular, string pRegistroSiNo, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_LineaCelRequest inValue = new global::TestService.WebServiInficaja.PROC_LineaCelRequest();
+        public System.Threading.Tasks.Task<PROC_LineaCelResponse> PROC_LineaCelAsync(string pCelular, string pRegistroSiNo, string pLlaveConexion) {
+            PROC_LineaCelRequest inValue = new PROC_LineaCelRequest();
             inValue.pCelular = pCelular;
             inValue.pRegistroSiNo = pRegistroSiNo;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_LineaCelAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_LineaCelAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_EnviarWhatsAppResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_EnviarWhatsApp(global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest request) {
+        PROC_EnviarWhatsAppResponse WebServiInficajaSOAPPortType.PROC_EnviarWhatsApp(PROC_EnviarWhatsAppRequest request) {
             return base.Channel.PROC_EnviarWhatsApp(request);
         }
         
         public string PROC_EnviarWhatsApp(string pTelefono, string pMensaje, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest inValue = new global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest();
+            PROC_EnviarWhatsAppRequest inValue = new PROC_EnviarWhatsAppRequest();
             inValue.pTelefono = pTelefono;
             inValue.pMensaje = pMensaje;
             inValue.pLlaveConexion = pLlaveConexion;
-            global::TestService.WebServiInficaja.PROC_EnviarWhatsAppResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_EnviarWhatsApp(inValue);
+            PROC_EnviarWhatsAppResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_EnviarWhatsApp(inValue);
             return retVal.PROC_EnviarWhatsAppResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_EnviarWhatsAppResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_EnviarWhatsAppAsync(global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest request) {
+        System.Threading.Tasks.Task<PROC_EnviarWhatsAppResponse> WebServiInficajaSOAPPortType.PROC_EnviarWhatsAppAsync(PROC_EnviarWhatsAppRequest request) {
             return base.Channel.PROC_EnviarWhatsAppAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_EnviarWhatsAppResponse> PROC_EnviarWhatsAppAsync(string pTelefono, string pMensaje, string pLlaveConexion) {
-            global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest inValue = new global::TestService.WebServiInficaja.PROC_EnviarWhatsAppRequest();
+        public System.Threading.Tasks.Task<PROC_EnviarWhatsAppResponse> PROC_EnviarWhatsAppAsync(string pTelefono, string pMensaje, string pLlaveConexion) {
+            PROC_EnviarWhatsAppRequest inValue = new PROC_EnviarWhatsAppRequest();
             inValue.pTelefono = pTelefono;
             inValue.pMensaje = pMensaje;
             inValue.pLlaveConexion = pLlaveConexion;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_EnviarWhatsAppAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_EnviarWhatsAppAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        global::TestService.WebServiInficaja.PROC_RegistrationData_ValidResponse global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_RegistrationData_Valid(global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest request) {
+        PROC_RegistrationData_ValidResponse WebServiInficajaSOAPPortType.PROC_RegistrationData_Valid(PROC_RegistrationData_ValidRequest request) {
             return base.Channel.PROC_RegistrationData_Valid(request);
         }
         
-        public global::TestService.WebServiInficaja.ST_RegistrationData[] PROC_RegistrationData_Valid(string pLlaveConexion, string pDocumentld, string pClientType, string pUserName, string pName, string pLastname, string pMail, string pPhone, string pCellPhone) {
-            global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest inValue = new global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest();
+        public ST_RegistrationData[] PROC_RegistrationData_Valid(string pLlaveConexion, string pDocumentld, string pClientType, string pUserName, string pName, string pLastname, string pMail, string pPhone, string pCellPhone) {
+            PROC_RegistrationData_ValidRequest inValue = new PROC_RegistrationData_ValidRequest();
             inValue.pLlaveConexion = pLlaveConexion;
             inValue.pDocumentld = pDocumentld;
             inValue.pClientType = pClientType;
@@ -6827,17 +6827,17 @@ namespace TestService.WebServiInficaja {
             inValue.pMail = pMail;
             inValue.pPhone = pPhone;
             inValue.pCellPhone = pCellPhone;
-            global::TestService.WebServiInficaja.PROC_RegistrationData_ValidResponse retVal = ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_RegistrationData_Valid(inValue);
+            PROC_RegistrationData_ValidResponse retVal = ((WebServiInficajaSOAPPortType)(this)).PROC_RegistrationData_Valid(inValue);
             return retVal.PROC_RegistrationData_ValidResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_RegistrationData_ValidResponse> global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType.PROC_RegistrationData_ValidAsync(global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest request) {
+        System.Threading.Tasks.Task<PROC_RegistrationData_ValidResponse> WebServiInficajaSOAPPortType.PROC_RegistrationData_ValidAsync(PROC_RegistrationData_ValidRequest request) {
             return base.Channel.PROC_RegistrationData_ValidAsync(request);
         }
         
-        public System.Threading.Tasks.Task<global::TestService.WebServiInficaja.PROC_RegistrationData_ValidResponse> PROC_RegistrationData_ValidAsync(string pLlaveConexion, string pDocumentld, string pClientType, string pUserName, string pName, string pLastname, string pMail, string pPhone, string pCellPhone) {
-            global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest inValue = new global::TestService.WebServiInficaja.PROC_RegistrationData_ValidRequest();
+        public System.Threading.Tasks.Task<PROC_RegistrationData_ValidResponse> PROC_RegistrationData_ValidAsync(string pLlaveConexion, string pDocumentld, string pClientType, string pUserName, string pName, string pLastname, string pMail, string pPhone, string pCellPhone) {
+            PROC_RegistrationData_ValidRequest inValue = new PROC_RegistrationData_ValidRequest();
             inValue.pLlaveConexion = pLlaveConexion;
             inValue.pDocumentld = pDocumentld;
             inValue.pClientType = pClientType;
@@ -6847,7 +6847,7 @@ namespace TestService.WebServiInficaja {
             inValue.pMail = pMail;
             inValue.pPhone = pPhone;
             inValue.pCellPhone = pCellPhone;
-            return ((global::TestService.WebServiInficaja.WebServiInficajaSOAPPortType)(this)).PROC_RegistrationData_ValidAsync(inValue);
+            return ((WebServiInficajaSOAPPortType)(this)).PROC_RegistrationData_ValidAsync(inValue);
         }
     }
 }
