@@ -1,0 +1,1619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7cdff0c2-ffef-4cb3-962e-853bc5cbf66a" activeEnvironment="Default" name="TestCajaSolidaria" resourceRoot="" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="2b91e0c9-413d-49e0-8fa7-f91ac997d3a4" wsaVersion="NONE" name="WebServiInficajaSOAPBinding" type="wsdl" bindingName="{urn:WebServiInficaja}WebServiInficajaSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl"><con:part><con:url>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws?wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="urn:WebServiInficaja" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s0="urn:WebServiInficaja" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="unqualified" targetNamespace="urn:WebServiInficaja">
+      <xsd:simpleType name="WLChar">
+        <xsd:restriction base="xsd:string">
+          <xsd:length value="1" fixed="true"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ST_RegistrationData" s0:nomcomplet="ST_RegistrationData">
+        <xsd:sequence>
+          <xsd:element name="sRD_Status" type="xsd:string"/>
+          <xsd:element name="sRD_MSG" type="xsd:string"/>
+          <xsd:element name="sRD_Aciertos" type="xsd:string"/>
+          <xsd:element name="sRD_NoSocio" type="xsd:string"/>
+          <xsd:element name="sRD_UserName" type="xsd:string"/>
+          <xsd:element name="sRD_Name" type="xsd:string"/>
+          <xsd:element name="sRD_Mail" type="xsd:string"/>
+          <xsd:element name="sRD_Phone" type="xsd:string"/>
+          <xsd:element name="sRD_CellPhone" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_PlanPagos" s0:nomcomplet="ST_PlanPagos">
+        <xsd:sequence>
+          <xsd:element name="sPP_Status" type="xsd:string"/>
+          <xsd:element name="sPP_MSG" type="xsd:string"/>
+          <xsd:element name="sPP_Numero" type="xsd:string"/>
+          <xsd:element name="sPP_Iden" type="xsd:string"/>
+          <xsd:element name="sPP_Socio" type="xsd:string"/>
+          <xsd:element name="sPP_Cuenta" type="xsd:string"/>
+          <xsd:element name="sPP_Documento" type="xsd:string"/>
+          <xsd:element name="sPP_Iden2" type="xsd:string"/>
+          <xsd:element name="sPP_FechaEntrega" type="xsd:string"/>
+          <xsd:element name="sPP_TasaNormal" type="xsd:string"/>
+          <xsd:element name="sPP_TasaIVA" type="xsd:string"/>
+          <xsd:element name="sPP_PagoNumero" type="xsd:string"/>
+          <xsd:element name="sPP_Dia" type="xsd:string"/>
+          <xsd:element name="sPP_Dias" type="xsd:string"/>
+          <xsd:element name="sPP_Fecha" type="xsd:string"/>
+          <xsd:element name="sPP_Abono" type="xsd:string"/>
+          <xsd:element name="sPP_Saldo" type="xsd:string"/>
+          <xsd:element name="sPP_SaldoMoratorio" type="xsd:string"/>
+          <xsd:element name="sPP_FechaBaseIntMora" type="xsd:string"/>
+          <xsd:element name="sPP_FechaQPago" type="xsd:string"/>
+          <xsd:element name="sPP_PagosFijos" type="xsd:string"/>
+          <xsd:element name="sPP_Interes" type="xsd:string"/>
+          <xsd:element name="sPP_IVA" type="xsd:string"/>
+          <xsd:element name="sPP_InteresIVA" type="xsd:string"/>
+          <xsd:element name="sPP_PagoFijo" type="xsd:string"/>
+          <xsd:element name="sPP_FechaPlan" type="xsd:string"/>
+          <xsd:element name="sPP_SaldoAcumulado" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_ValidaUsuario" s0:nomcomplet="ST_ValidaUsuario">
+        <xsd:sequence>
+          <xsd:element name="sVaUsu_Status" type="xsd:string"/>
+          <xsd:element name="sVaUsu_Socio" type="xsd:string"/>
+          <xsd:element name="sVaUsu_Paterno" type="xsd:string"/>
+          <xsd:element name="sVaUsu_Materno" type="xsd:string"/>
+          <xsd:element name="sVaUsu_Nombre" type="xsd:string"/>
+          <xsd:element name="sVaUsu_Celular" type="xsd:string"/>
+          <xsd:element name="sVaUsu_Email" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_CargaEdoCtas" s0:nomcomplet="ST_CargaEdoCtas">
+        <xsd:sequence>
+          <xsd:element name="sCEC_Fecha" type="xsd:string"/>
+          <xsd:element name="sCEC_Cuenta" type="xsd:string"/>
+          <xsd:element name="sCEC_NombreCta" type="xsd:string"/>
+          <xsd:element name="sCEC_Tamano" type="xsd:string"/>
+          <xsd:element name="sCEC_ArchivoPDF" type="xsd:string"/>
+          <xsd:element name="sCEC_ArchivoXML" type="xsd:string"/>
+          <xsd:element name="sCEC_Ruta_ArchivoPDF" type="xsd:string"/>
+          <xsd:element name="sCEC_Ruta_ArchivoXML" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_BancosSPEI" s0:nomcomplet="ST_BancosSPEI">
+        <xsd:sequence>
+          <xsd:element name="sBSStatus" type="xsd:string"/>
+          <xsd:element name="sBSMSG" type="xsd:string"/>
+          <xsd:element name="sBSNumero" type="xsd:string"/>
+          <xsd:element name="sBSClave" type="xsd:string"/>
+          <xsd:element name="sBSDescripcion" type="xsd:string"/>
+          <xsd:element name="sBSGrupo" type="xsd:string"/>
+          <xsd:element name="sBSActivo" type="xsd:string"/>
+          <xsd:element name="sBSCatalogoID" type="xsd:string"/>
+          <xsd:element name="sBSActualizacion" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_Token" s0:nomcomplet="ST_Token">
+        <xsd:sequence>
+          <xsd:element name="sTkStatus" type="xsd:string"/>
+          <xsd:element name="sTkMSG" type="xsd:string"/>
+          <xsd:element name="sTkFolio" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_UpdatePass" s0:nomcomplet="ST_UpdatePass">
+        <xsd:sequence>
+          <xsd:element name="sUpStatus" type="xsd:string"/>
+          <xsd:element name="sUpMSG" type="xsd:string"/>
+          <xsd:element name="sUpFolio" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_EnvioSPEI" s0:nomcomplet="ST_EnvioSPEI">
+        <xsd:sequence>
+          <xsd:element name="sSPIStatus" type="xsd:string"/>
+          <xsd:element name="sSPIMSG" type="xsd:string"/>
+          <xsd:element name="sSPIFolio" type="xsd:string"/>
+          <xsd:element name="sSPICadena" type="xsd:string"/>
+          <xsd:element name="sSPIResult_CorreAplicacion" type="xsd:string"/>
+          <xsd:element name="sSPIDatosCta" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_SavingsAccounts" s0:nomcomplet="ST_SavingsAccounts">
+        <xsd:sequence>
+          <xsd:element name="sSvProcesoInterno" type="xsd:string"/>
+          <xsd:element name="sSvFolio" type="xsd:string"/>
+          <xsd:element name="sSvStatus" type="xsd:string"/>
+          <xsd:element name="sSvMSG" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_Transfers" s0:nomcomplet="ST_Transfers">
+        <xsd:sequence>
+          <xsd:element name="sTfProcesoInterno" type="xsd:string"/>
+          <xsd:element name="sTfFolio" type="xsd:string"/>
+          <xsd:element name="sTfStatus" type="xsd:string"/>
+          <xsd:element name="sTfMSG" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_DataClient" s0:nomcomplet="ST_DataClient">
+        <xsd:sequence>
+          <xsd:element name="nDcCliente" type="xsd:int"/>
+          <xsd:element name="sDcNombreC" type="xsd:string"/>
+          <xsd:element name="sDcTipoCliente" type="xsd:string"/>
+          <xsd:element name="sDcEmail" type="xsd:string"/>
+          <xsd:element name="sDcCelular" type="xsd:string"/>
+          <xsd:element name="dCFechaEdad" type="xsd:date"/>
+          <xsd:element name="nDcCastigado" type="xsd:int"/>
+          <xsd:element name="nDcBaja" type="xsd:int"/>
+          <xsd:element name="nDcSuspendido" type="xsd:int"/>
+          <xsd:element name="sDcCalle" type="xsd:string"/>
+          <xsd:element name="sDcNumero" type="xsd:string"/>
+          <xsd:element name="sDcInterior" type="xsd:string"/>
+          <xsd:element name="sDcColonia" type="xsd:string"/>
+          <xsd:element name="sDcMunicipio" type="xsd:string"/>
+          <xsd:element name="sDcCiudad" type="xsd:string"/>
+          <xsd:element name="sDcEstado" type="xsd:string"/>
+          <xsd:element name="sDcCodigoPostal" type="xsd:string"/>
+          <xsd:element name="sDcCorreo" type="xsd:string"/>
+          <xsd:element name="sDcGenero" type="xsd:string"/>
+          <xsd:element name="sDcRFC" type="xsd:string"/>
+          <xsd:element name="sDcCURP" type="xsd:string"/>
+          <xsd:element name="sDcTelefonoCasa" type="xsd:string"/>
+          <xsd:element name="sDcTelefonoCel" type="xsd:string"/>
+          <xsd:element name="sDcMSGError" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_DataBalance" s0:nomcomplet="ST_DataBalance">
+        <xsd:sequence>
+          <xsd:element name="nDbCuenta" type="xsd:int"/>
+          <xsd:element name="nDbPlazoFijo" type="xsd:int"/>
+          <xsd:element name="nDbPrestamo" type="xsd:int"/>
+          <xsd:element name="sDbNombreCuenta" type="xsd:string"/>
+          <xsd:element name="dDbFechaAlta" type="xsd:date"/>
+          <xsd:element name="dDbInicioPlazo" type="xsd:date"/>
+          <xsd:element name="dDbVencePlazo" type="xsd:date"/>
+          <xsd:element name="sDbTipoCuenta" type="xsd:string"/>
+          <xsd:element name="dDbUltimoMovto" type="xsd:date"/>
+          <xsd:element name="dDbFechaMovtoAnterior" type="xsd:date"/>
+          <xsd:element name="cyDbSaldoAnterior" type="xsd:decimal"/>
+          <xsd:element name="cyDbSaldoActual" type="xsd:decimal"/>
+          <xsd:element name="sDbNumeroContrato" type="xsd:string"/>
+          <xsd:element name="sDbTitulo" type="xsd:string"/>
+          <xsd:element name="nDbCancelada" type="xsd:int"/>
+          <xsd:element name="dDbFechaCancelada" type="xsd:date"/>
+          <xsd:element name="cyDbSaldoBuenCobro" type="xsd:decimal"/>
+          <xsd:element name="sDbMoneda" type="xsd:string"/>
+          <xsd:element name="cyDbTipoCambio" type="xsd:decimal"/>
+          <xsd:element name="cyDbMinimoCta" type="xsd:decimal"/>
+          <xsd:element name="cyDbMaximoCta" type="xsd:decimal"/>
+          <xsd:element name="nDbEsRemesa" type="xsd:int"/>
+          <xsd:element name="dDbFechaSolicitud" type="xsd:date"/>
+          <xsd:element name="dDbFechaEntrega" type="xsd:date"/>
+          <xsd:element name="dDbFechaVence" type="xsd:date"/>
+          <xsd:element name="nDbCreditoCastigado" type="xsd:int"/>
+          <xsd:element name="nDbPagar_En" type="xsd:int"/>
+          <xsd:element name="nDbPagos_De" type="xsd:int"/>
+          <xsd:element name="cyDbMonto_De" type="xsd:decimal"/>
+          <xsd:element name="cyDbImporte" type="xsd:decimal"/>
+          <xsd:element name="cyDbImporteAutorizado" type="xsd:decimal"/>
+          <xsd:element name="cyDbSaldoPrestamo" type="xsd:decimal"/>
+          <xsd:element name="cyDbSaldoActualMora" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteresNormal" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteresMoratorio" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteresDescuento" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres1" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres2" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres3" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres4" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres5" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres6" type="xsd:decimal"/>
+          <xsd:element name="cyDbInteres7" type="xsd:decimal"/>
+          <xsd:element name="nDbEsPagoFijo" type="xsd:int"/>
+          <xsd:element name="cyDbCAT" type="xsd:decimal"/>
+          <xsd:element name="cyDbPagoMinimo" type="xsd:decimal"/>
+          <xsd:element name="cyDbTasaNormal" type="xsd:decimal"/>
+          <xsd:element name="cyDbTasaMoratoria" type="xsd:decimal"/>
+          <xsd:element name="cyDbTasaDescuento" type="xsd:decimal"/>
+          <xsd:element name="cyDbTasaIVA" type="xsd:decimal"/>
+          <xsd:element name="nDbPagosVencidos" type="xsd:int"/>
+          <xsd:element name="cyDbIVANormal" type="xsd:decimal"/>
+          <xsd:element name="cyDbIVAMoratorio" type="xsd:decimal"/>
+          <xsd:element name="cyDBIVADescuento" type="xsd:decimal"/>
+          <xsd:element name="dDbFechaPagoProximo" type="xsd:date"/>
+          <xsd:element name="cyDbMontoPagoProximo" type="xsd:decimal"/>
+          <xsd:element name="cySaldoTotal" type="xsd:decimal"/>
+          <xsd:element name="sDbSPEI_Identificador" type="xsd:string"/>
+          <xsd:element name="sDbSPEI_ClabeWS" type="xsd:string"/>
+          <xsd:element name="sDbSPEI_RFC" type="xsd:string"/>
+          <xsd:element name="cyDbSPEI_MontoMaximo" type="xsd:decimal"/>
+          <xsd:element name="sNombreCliente" type="xsd:string"/>
+          <xsd:element name="sAceptaRetiros" type="xsd:string"/>
+          <xsd:element name="sAceptaDepositos" type="xsd:string"/>
+          <xsd:element name="cyMaximoRetiroxDia" type="xsd:decimal"/>
+          <xsd:element name="cyMontoRetiradoDia" type="xsd:decimal"/>
+          <xsd:element name="sDcMSGError" type="xsd:string"/>
+          <xsd:element name="rTasa_Inv" type="xsd:double"/>
+          <xsd:element name="nDias_Inv" type="xsd:int"/>
+          <xsd:element name="sTasaMonto_Inv" type="xsd:double"/>
+          <xsd:element name="nDiasMonto_Inv" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_Movimientos" s0:nomcomplet="ST_Movimientos">
+        <xsd:sequence>
+          <xsd:element name="sMvRegistro" type="xsd:string"/>
+          <xsd:element name="dMvFecha" type="xsd:date"/>
+          <xsd:element name="tMvHora" type="xsd:time"/>
+          <xsd:element name="sMvTipo" type="xsd:string"/>
+          <xsd:element name="sMvDescripcion" type="xsd:string"/>
+          <xsd:element name="cyMvImporte" type="xsd:decimal"/>
+          <xsd:element name="cyMvSaldoAnterior" type="xsd:decimal"/>
+          <xsd:element name="cyMvSaldoActual" type="xsd:decimal"/>
+          <xsd:element name="sMvPlazaInstrumento" type="xsd:string"/>
+          <xsd:element name="nMvFolio" type="xsd:string"/>
+          <xsd:element name="sMvProceso" type="xsd:string"/>
+          <xsd:element name="nMvCuenta" type="xsd:int"/>
+          <xsd:element name="nMvSubCuenta" type="xsd:int"/>
+          <xsd:element name="nMvPrestamo" type="xsd:int"/>
+          <xsd:element name="nMvPlazoFijo" type="xsd:int"/>
+          <xsd:element name="sMvMSGError" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_PagoCredito" s0:nomcomplet="ST_PagoCredito">
+        <xsd:sequence>
+          <xsd:element name="sPCFicha" type="xsd:string"/>
+          <xsd:element name="sPCStatus" type="xsd:string"/>
+          <xsd:element name="sPCMSGError" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_AltaCtasTerceros" s0:nomcomplet="ST_AltaCtasTerceros">
+        <xsd:sequence>
+          <xsd:element name="sACTRegistro" type="xsd:string"/>
+          <xsd:element name="sACTStatus" type="xsd:string"/>
+          <xsd:element name="sACTMSGError" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_BajaCtasTerceros" s0:nomcomplet="ST_BajaCtasTerceros">
+        <xsd:sequence>
+          <xsd:element name="sACTRegistro" type="xsd:string"/>
+          <xsd:element name="sACTStatus" type="xsd:string"/>
+          <xsd:element name="sACTMSGError" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_ListadoCtasTerceros" s0:nomcomplet="ST_ListadoCtasTerceros">
+        <xsd:sequence>
+          <xsd:element name="xLisNumero" type="xsd:decimal"/>
+          <xsd:element name="dLisFecha" type="xsd:string"/>
+          <xsd:element name="tLisHora" type="xsd:string"/>
+          <xsd:element name="nLisSocio" type="xsd:int"/>
+          <xsd:element name="sLisClabeDestino" type="xsd:string"/>
+          <xsd:element name="sLisNombreDestino" type="xsd:string"/>
+          <xsd:element name="sLisClaveBanco" type="xsd:string"/>
+          <xsd:element name="sLisNombreBanco" type="xsd:string"/>
+          <xsd:element name="cyLisMaximo" type="xsd:decimal"/>
+          <xsd:element name="bLisNotificar" type="xsd:boolean"/>
+          <xsd:element name="sLisNumeroCel" type="xsd:string"/>
+          <xsd:element name="sLisCorreoEmail" type="xsd:string"/>
+          <xsd:element name="sLisStatus" type="xsd:string"/>
+          <xsd:element name="sLisMDGErrror" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ST_UpdateCel" s0:nomcomplet="ST_UpdateCel">
+        <xsd:sequence>
+          <xsd:element name="sUC_Status" type="xsd:string"/>
+          <xsd:element name="sUC_MSG" type="xsd:string"/>
+          <xsd:element name="sUC_Celular_Anterior" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_SavingsAccountsResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_SavingsAccountsResult" type="s0:ST_SavingsAccounts" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_DataClientResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_DataClientResult" type="s0:ST_DataClient" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_DataBalanceResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_DataBalanceResult" type="s0:ST_DataBalance" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_CreditPaymentsResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_CreditPaymentsResult" type="s0:ST_PagoCredito" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_MovementsResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_MovementsResult" type="s0:ST_Movimientos" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_TransfersResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_TransfersResult" type="s0:ST_Transfers" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_CtasTercerosAltaSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_CtasTercerosAltaSPEIResult" type="s0:ST_AltaCtasTerceros" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_CtasTercerosBajaSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_CtasTercerosBajaSPEIResult" type="s0:ST_BajaCtasTerceros" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_ListadoCtasTercerosSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_ListadoCtasTercerosSPEIResult" type="s0:ST_ListadoCtasTerceros" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_TokenResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_TokenResult" type="s0:ST_Token" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_SavingsAccountsSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_SavingsAccountsSPEIResult" type="s0:ST_SavingsAccounts" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_CreditPaymentsSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_CreditPaymentsSPEIResult" type="s0:ST_PagoCredito" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_ListadoBancosSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_ListadoBancosSPEIResult" type="s0:ST_BancosSPEI" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_OrdenesPagoSPEIResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_OrdenesPagoSPEIResult" type="s0:ST_EnvioSPEI" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_CargaEdoCtasResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_CargaEdoCtasResult" type="s0:ST_CargaEdoCtas" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_UpdatePassResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_UpdatePassResult" type="s0:ST_UpdatePass" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_ValidaUsuarioResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_ValidaUsuarioResult" type="s0:ST_ValidaUsuario" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_PlanPagosResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_PlanPagosResult" type="s0:ST_PlanPagos" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_UpdateCelResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_UpdateCelResult" type="s0:ST_UpdateCel" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PROC_RegistrationData_ValidResponse">
+        <xsd:sequence>
+          <xsd:element name="PROC_RegistrationData_ValidResult" type="s0:ST_RegistrationData" maxOccurs="unbounded"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </types>
+  <message name="WebServiInficaja_PROC_SavingsAccounts_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="pCuenta" type="xsd:int"/>
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pInversion" type="xsd:int"/>
+    <part name="PNota" type="xsd:string"/>
+    <part name="PCodeBar" type="xsd:string"/>
+    <part name="PRetiro" type="xsd:decimal"/>
+    <part name="PDeposito" type="xsd:decimal"/>
+    <part name="PToken" type="xsd:string"/>
+    <part name="sPCuentaClabeDestino" type="xsd:string"/>
+    <part name="sPTipoProceso" type="xsd:string"/>
+    <part name="cyPMontoComision" type="xsd:decimal"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsAccounts_MessageOut">
+    <part name="PROC_SavingsAccountsResponse" type="s0:PROC_SavingsAccountsResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Connection_MessageIn">
+    <part name="pDato" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Connection_MessageOut">
+    <part name="PROC_ConnectionResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataClient_MessageIn">
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataClient_MessageOut">
+    <part name="PROC_DataClientResponse" type="s0:PROC_DataClientResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataBalance_MessageIn">
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pCuenta" type="xsd:int"/>
+    <part name="pInversion" type="xsd:int"/>
+    <part name="pDocumento" type="xsd:int"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataBalance_MessageOut">
+    <part name="PROC_DataBalanceResponse" type="s0:PROC_DataBalanceResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CreditPayments_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="PDocumento" type="xsd:int"/>
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="PAbono" type="xsd:decimal"/>
+    <part name="sPtoken" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CreditPayments_MessageOut">
+    <part name="PROC_CreditPaymentsResponse" type="s0:PROC_CreditPaymentsResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsPersonalInformation_MessageIn">
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pTelefonoNew" type="xsd:string"/>
+    <part name="pEmailNew" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsPersonalInformation_MessageOut">
+    <part name="PROC_SavingsPersonalInformationResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Movements_MessageIn">
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pCuenta" type="xsd:int"/>
+    <part name="pDesde" type="xsd:string"/>
+    <part name="pHasta" type="xsd:string"/>
+    <part name="pPrestamo" type="xsd:int"/>
+    <part name="pPlazoFijo" type="xsd:int"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Movements_MessageOut">
+    <part name="PROC_MovementsResponse" type="s0:PROC_MovementsResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Transfers_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="PCuenta" type="xsd:int"/>
+    <part name="PCliente" type="xsd:int"/>
+    <part name="PTelefono" type="xsd:string"/>
+    <part name="PInversion" type="xsd:int"/>
+    <part name="PNota" type="xsd:string"/>
+    <part name="PCodeBar" type="xsd:string"/>
+    <part name="PRetiro" type="xsd:decimal"/>
+    <part name="PDeposito" type="xsd:decimal"/>
+    <part name="PToken" type="xsd:string"/>
+    <part name="nClienteDestino" type="xsd:int"/>
+    <part name="nPCuentaDestino" type="xsd:int"/>
+    <part name="sPCuentaClabeDestino" type="xsd:string"/>
+    <part name="sPTipoProceso" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Transfers_MessageOut">
+    <part name="PROC_TransfersResponse" type="s0:PROC_TransfersResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataClient_txt_MessageIn">
+    <part name="PCliente" type="xsd:int"/>
+    <part name="PTelefono" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataClient_txt_MessageOut">
+    <part name="PROC_DataClient_txtResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataBalance_txt_MessageIn">
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pCuenta" type="xsd:int"/>
+    <part name="pInversion" type="xsd:int"/>
+    <part name="pDocumento" type="xsd:int"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_DataBalance_txt_MessageOut">
+    <part name="PROC_DataBalance_txtResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Transfers_txt_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="PCuenta" type="xsd:int"/>
+    <part name="PCliente" type="xsd:int"/>
+    <part name="PTelefono" type="xsd:string"/>
+    <part name="PInversion" type="xsd:int"/>
+    <part name="PNota" type="xsd:string"/>
+    <part name="PCodeBar" type="xsd:string"/>
+    <part name="PRetiro" type="xsd:decimal"/>
+    <part name="PDeposito" type="xsd:decimal"/>
+    <part name="PToken" type="xsd:string"/>
+    <part name="nClienteDestino" type="xsd:int"/>
+    <part name="nPCuentaDestino" type="xsd:int"/>
+    <part name="sPCuentaClabeDestino" type="xsd:string"/>
+    <part name="sPTipoProceso" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Transfers_txt_MessageOut">
+    <part name="PROC_Transfers_txtResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Movements_txt_MessageIn">
+    <part name="PCliente" type="xsd:int"/>
+    <part name="PTelefono" type="xsd:string"/>
+    <part name="PCuenta" type="xsd:int"/>
+    <part name="pDesde" type="xsd:string"/>
+    <part name="pHasta" type="xsd:string"/>
+    <part name="pPrestamo" type="xsd:int"/>
+    <part name="pPlazoFijo" type="xsd:int"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Movements_txt_MessageOut">
+    <part name="PROC_Movements_txtResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CtasTercerosAltaSPEI_MessageIn">
+    <part name="nPCliente" type="xsd:int"/>
+    <part name="sPTelefono" type="xsd:string"/>
+    <part name="sPClabeDestino" type="xsd:string"/>
+    <part name="sPNombreDestino" type="xsd:string"/>
+    <part name="sPClaveBanco" type="xsd:string"/>
+    <part name="sPNombreBanco" type="xsd:string"/>
+    <part name="rPMaximo" type="xsd:string"/>
+    <part name="bPNotificar" type="xsd:string"/>
+    <part name="sPCelular" type="xsd:string"/>
+    <part name="sPEmail" type="xsd:string"/>
+    <part name="sPToken" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CtasTercerosAltaSPEI_MessageOut">
+    <part name="PROC_CtasTercerosAltaSPEIResponse" type="s0:PROC_CtasTercerosAltaSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CtasTercerosBajaSPEI_MessageIn">
+    <part name="nPCliente" type="xsd:int"/>
+    <part name="sPTelefono" type="xsd:string"/>
+    <part name="sPClabeDestino" type="xsd:string"/>
+    <part name="sPToken" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CtasTercerosBajaSPEI_MessageOut">
+    <part name="PROC_CtasTercerosBajaSPEIResponse" type="s0:PROC_CtasTercerosBajaSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_ListadoCtasTercerosSPEI_MessageIn">
+    <part name="nPCliente" type="xsd:int"/>
+    <part name="sPTelefono" type="xsd:string"/>
+    <part name="sPClabeDestino" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_ListadoCtasTercerosSPEI_MessageOut">
+    <part name="PROC_ListadoCtasTercerosSPEIResponse" type="s0:PROC_ListadoCtasTercerosSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Token_MessageIn">
+    <part name="pCliente" type="xsd:string"/>
+    <part name="pCodigo" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_Token_MessageOut">
+    <part name="PROC_TokenResponse" type="s0:PROC_TokenResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CtaClabeCte_MessageIn">
+    <part name="pCtaClabe" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CtaClabeCte_MessageOut">
+    <part name="PROC_CtaClabeCteResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsAccountsSPEI_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="pCuenta" type="xsd:int"/>
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pInversion" type="xsd:int"/>
+    <part name="PNota" type="xsd:string"/>
+    <part name="PCodeBar" type="xsd:string"/>
+    <part name="PRetiro" type="xsd:decimal"/>
+    <part name="PDeposito" type="xsd:decimal"/>
+    <part name="PToken" type="xsd:string"/>
+    <part name="sPCuentaClabeDestino" type="xsd:string"/>
+    <part name="sPTipoProceso" type="xsd:string"/>
+    <part name="cyPMontoComision" type="xsd:decimal"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsAccountsSPEI_MessageOut">
+    <part name="PROC_SavingsAccountsSPEIResponse" type="s0:PROC_SavingsAccountsSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CreditPaymentsSPEI_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="PDocumento" type="xsd:int"/>
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="PAbono" type="xsd:decimal"/>
+    <part name="sPtoken" type="xsd:string"/>
+    <part name="sPNota" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CreditPaymentsSPEI_MessageOut">
+    <part name="PROC_CreditPaymentsSPEIResponse" type="s0:PROC_CreditPaymentsSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_EnviarSMS_MessageIn">
+    <part name="pCodigoActivacion" type="xsd:string"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pAsunto" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_EnviarSMS_MessageOut">
+    <part name="PROC_EnviarSMSResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsAccounts_txt_MessageIn">
+    <part name="PUsuarioSistema" type="xsd:string"/>
+    <part name="PLicenciaSistema" type="xsd:string"/>
+    <part name="pCuenta" type="xsd:int"/>
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pInversion" type="xsd:int"/>
+    <part name="PNota" type="xsd:string"/>
+    <part name="PCodeBar" type="xsd:string"/>
+    <part name="PRetiro" type="xsd:decimal"/>
+    <part name="PDeposito" type="xsd:decimal"/>
+    <part name="PToken" type="xsd:string"/>
+    <part name="sPCuentaClabeDestino" type="xsd:string"/>
+    <part name="sPTipoProceso" type="xsd:string"/>
+    <part name="cyPMontoComision" type="xsd:decimal"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_SavingsAccounts_txt_MessageOut">
+    <part name="PROC_SavingsAccounts_txtResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_ListadoBancosSPEI_MessageIn">
+    <part name="nPCliente" type="xsd:int"/>
+    <part name="sPTelefono" type="xsd:string"/>
+    <part name="sPClave" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_ListadoBancosSPEI_MessageOut">
+    <part name="PROC_ListadoBancosSPEIResponse" type="s0:PROC_ListadoBancosSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_OrdenesPagoSPEI_MessageIn">
+    <part name="nPCliente" type="xsd:int"/>
+    <part name="sPTelefono" type="xsd:string"/>
+    <part name="sPCuentaClabeOrigen" type="xsd:string"/>
+    <part name="sPConcepto" type="xsd:string"/>
+    <part name="cyPMonto" type="xsd:decimal"/>
+    <part name="cyComision" type="xsd:decimal"/>
+    <part name="sPToken" type="xsd:string"/>
+    <part name="sPCuentaClabeDestino" type="xsd:string"/>
+    <part name="sClaveBancoDestino" type="xsd:string"/>
+    <part name="sNombreBancoDestino" type="xsd:string"/>
+    <part name="sNombreBeneficiario" type="xsd:string"/>
+    <part name="spAplicacion" type="xsd:string"/>
+    <part name="spLatitud" type="xsd:string"/>
+    <part name="spLongitud" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_OrdenesPagoSPEI_MessageOut">
+    <part name="PROC_OrdenesPagoSPEIResponse" type="s0:PROC_OrdenesPagoSPEIResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CargaEdoCtas_MessageIn">
+    <part name="nPCliente" type="xsd:int"/>
+    <part name="sPTelefono" type="xsd:string"/>
+    <part name="nPCuenta" type="xsd:int"/>
+    <part name="pCadenapermiso" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_CargaEdoCtas_MessageOut">
+    <part name="PROC_CargaEdoCtasResponse" type="s0:PROC_CargaEdoCtasResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_UpdatePass_MessageIn">
+    <part name="pCliente" type="xsd:string"/>
+    <part name="pToken" type="xsd:string"/>
+    <part name="pPassNew" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_UpdatePass_MessageOut">
+    <part name="PROC_UpdatePassResponse" type="s0:PROC_UpdatePassResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_BitacoraDepto_MessageIn">
+    <part name="pCodigoActiva" type="xsd:string"/>
+    <part name="pUsuario" type="xsd:string"/>
+    <part name="pPC" type="xsd:string"/>
+    <part name="pRealizo" type="xsd:string"/>
+    <part name="pRecibio" type="xsd:string"/>
+    <part name="pAnotacion" type="xsd:string"/>
+    <part name="pTipoDocto" type="xsd:string"/>
+    <part name="pNumeroDocto" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_BitacoraDepto_MessageOut">
+    <part name="PROC_BitacoraDeptoResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_GeneraLlaveConexion_MessageIn">
+    <part name="pClaveGeneraLlave" type="xsd:string"/>
+    <part name="pLlave" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_GeneraLlaveConexion_MessageOut">
+    <part name="PROC_GeneraLlaveConexionResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_ValidaUsuario_MessageIn">
+    <part name="pUsuario" type="xsd:string"/>
+    <part name="pContrasena" type="xsd:string"/>
+    <part name="pTipo" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_ValidaUsuario_MessageOut">
+    <part name="PROC_ValidaUsuarioResponse" type="s0:PROC_ValidaUsuarioResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_PlanPagos_MessageIn">
+    <part name="pCliente" type="xsd:int"/>
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pDocumento" type="xsd:int"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_PlanPagos_MessageOut">
+    <part name="PROC_PlanPagosResponse" type="s0:PROC_PlanPagosResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_UpdateCel_MessageIn">
+    <part name="pCliente" type="xsd:string"/>
+    <part name="pCelular" type="xsd:string"/>
+    <part name="pCodigo" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_UpdateCel_MessageOut">
+    <part name="PROC_UpdateCelResponse" type="s0:PROC_UpdateCelResponse"/>
+  </message>
+  <message name="WebServiInficaja_PROC_LineaCel_MessageIn">
+    <part name="pCelular" type="xsd:string"/>
+    <part name="pRegistroSiNo" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_LineaCel_MessageOut">
+    <part name="PROC_LineaCelResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_EnviarWhatsApp_MessageIn">
+    <part name="pTelefono" type="xsd:string"/>
+    <part name="pMensaje" type="xsd:string"/>
+    <part name="pLlaveConexion" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_EnviarWhatsApp_MessageOut">
+    <part name="PROC_EnviarWhatsAppResult" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_RegistrationData_Valid_MessageIn">
+    <part name="pLlaveConexion" type="xsd:string"/>
+    <part name="pDocumentld" type="xsd:string"/>
+    <part name="pClientType" type="xsd:string"/>
+    <part name="pUserName" type="xsd:string"/>
+    <part name="pName" type="xsd:string"/>
+    <part name="pLastname" type="xsd:string"/>
+    <part name="pMail" type="xsd:string"/>
+    <part name="pPhone" type="xsd:string"/>
+    <part name="pCellPhone" type="xsd:string"/>
+  </message>
+  <message name="WebServiInficaja_PROC_RegistrationData_Valid_MessageOut">
+    <part name="PROC_RegistrationData_ValidResponse" type="s0:PROC_RegistrationData_ValidResponse"/>
+  </message>
+  <portType name="WebServiInficajaSOAPPortType">
+    <operation name="PROC_SavingsAccounts">
+      <input message="s0:WebServiInficaja_PROC_SavingsAccounts_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_SavingsAccounts_MessageOut"/>
+    </operation>
+    <operation name="PROC_Connection">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_Connection (&lt;pDato&gt;)<br /><br /> Parameters:<br />	pDato: &lt;specify the role of pDato&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br /> 	pDato: &lt;specify the role of pDato&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_Connection_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_Connection_MessageOut"/>
+    </operation>
+    <operation name="PROC_DataClient">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_DataClient (&lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	pCliente (int): &lt;specify the role of nPCliente&gt;<br />	pTelefono (ANSI string): &lt;specify the role of pTelefono&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_DataClient_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_DataClient_MessageOut"/>
+    </operation>
+    <operation name="PROC_DataBalance">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_DataBalance (&lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;pCuenta&gt; is int, &lt;pInversion&gt; is int, &lt;pDocumento&gt; is int, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	pCliente (int): &lt;specify the role of pCliente&gt;<br />	pTelefono (ANSI string): &lt;specify the role of pCuenta&gt;<br />	pCuenta (int): &lt;specify the role of pInversion&gt;<br />	pInversion (int): &lt;specify the role of pDocumento&gt;<br />	pDocumento (int): &lt;specify the role of pDocumento&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_DataBalance_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_DataBalance_MessageOut"/>
+    </operation>
+    <operation name="PROC_CreditPayments">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_CreditPayments (&lt;PUsuarioSistema&gt;, &lt;PLicenciaSistema&gt;, &lt;PDocumento&gt; is int, &lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;PAbono&gt; is currency, &lt;sPtoken&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	PUsuarioSistema: &lt;specify the role of sPUsuarioSistema&gt;<br />	PLicenciaSistema: &lt;specify the role of PLicenciaSistema&gt;<br />	PDocumento (int): &lt;specify the role of nPDocumento&gt;<br />	pCliente (int): &lt;specify the role of nPSocio&gt;<br />	pTelefono (ANSI string): &lt;specify the role of sPTelefono&gt;<br />	PAbono (currency): &lt;specify the role of cyPAbono&gt;<br />	sPtoken (ANSI string): &lt;specify the role of ptoken&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	sPtoken (currency): &lt;specify the role of sPtoken&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_CreditPayments_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_CreditPayments_MessageOut"/>
+    </operation>
+    <operation name="PROC_SavingsPersonalInformation">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_SavingsPersonalInformation (&lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;pTelefonoNew&gt; is string, &lt;pEmailNew&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	pCliente (int): &lt;specify the role of nPCliente&gt;<br />	pTelefono (ANSI string): &lt;specify the role of sPTelefono&gt;<br />	pTelefonoNew (ANSI string): &lt;specify the role of pTelefonoNew&gt;<br />	pEmailNew (ANSI string): &lt;specify the role of pEmail&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_SavingsPersonalInformation_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_SavingsPersonalInformation_MessageOut"/>
+    </operation>
+    <operation name="PROC_Movements">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_Movements (&lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;pCuenta&gt; is int, &lt;pDesde&gt;, &lt;pHasta&gt;, &lt;pPrestamo&gt; is int, &lt;pPlazoFijo&gt; is int, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	pCliente (int): &lt;specify the role of PCliente&gt;<br />	pTelefono (ANSI string): &lt;specify the role of pTelefono&gt;<br />	pCuenta (int): &lt;specify the role of pCuenta&gt;<br />	pDesde: &lt;specify the role of pDesde&gt;<br />	pHasta: &lt;specify the role of pHasta&gt;<br />	pPrestamo (int): &lt;specify the role of nPPrestamo&gt;<br />	pPlazoFijo (int): &lt;specify the role of nPPlazoFijoiss&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	pPlazoFijois (int): &lt;specify the role of pPlazoFijois&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_Movements_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_Movements_MessageOut"/>
+    </operation>
+    <operation name="PROC_Transfers">
+      <input message="s0:WebServiInficaja_PROC_Transfers_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_Transfers_MessageOut"/>
+    </operation>
+    <operation name="PROC_DataClient_txt">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_DataClient_txt (&lt;PCliente&gt; is int, &lt;PTelefono&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	PCliente (int): &lt;specify the role of nPCliente&gt;<br />	PTelefono (ANSI string): &lt;specify the role of pTelefono&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_DataClient_txt_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_DataClient_txt_MessageOut"/>
+    </operation>
+    <operation name="PROC_DataBalance_txt">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_DataBalance_txt (&lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;pCuenta&gt; is int, &lt;pInversion&gt; is int, &lt;pDocumento&gt; is int, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	pCliente (int): &lt;specify the role of pCliente&gt;<br />	pTelefono (ANSI string): &lt;specify the role of pCuenta&gt;<br />	pCuenta (int): &lt;specify the role of pInversion&gt;<br />	pInversion (int): &lt;specify the role of pDocumento&gt;<br />	pDocumento (int): &lt;specify the role of pDocumento&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_DataBalance_txt_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_DataBalance_txt_MessageOut"/>
+    </operation>
+    <operation name="PROC_Transfers_txt">
+      <input message="s0:WebServiInficaja_PROC_Transfers_txt_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_Transfers_txt_MessageOut"/>
+    </operation>
+    <operation name="PROC_Movements_txt">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_Movements_txt (&lt;PCliente&gt; is int, &lt;PTelefono&gt; is string, &lt;PCuenta&gt; is int, &lt;pDesde&gt;, &lt;pHasta&gt;, &lt;pPrestamo&gt; is int, &lt;pPlazoFijo&gt; is int, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	PCliente (int): &lt;specify the role of PCliente&gt;<br />	PTelefono (ANSI string): &lt;specify the role of pTelefono&gt;<br />	PCuenta (int): &lt;specify the role of pCuenta&gt;<br />	pDesde: &lt;specify the role of pDesde&gt;<br />	pHasta: &lt;specify the role of pHasta&gt;<br />	pPrestamo (int): &lt;specify the role of nPPrestamo&gt;<br />	pPlazoFijo (int): &lt;specify the role of nPPlazoFijoiss&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	pPlazoFijois (int): &lt;specify the role of pPlazoFijois&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_Movements_txt_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_Movements_txt_MessageOut"/>
+    </operation>
+    <operation name="PROC_CtasTercerosAltaSPEI">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_CtasTercerosAltaSPEI (&lt;nPCliente&gt; is int, &lt;sPTelefono&gt; is string, &lt;sPClabeDestino&gt; is string, &lt;sPNombreDestino&gt; is string, &lt;sPClaveBanco&gt; is string, &lt;sPNombreBanco&gt; is string, &lt;rPMaximo&gt;, &lt;bPNotificar&gt;, &lt;sPCelular&gt;, &lt;sPEmail&gt;, &lt;sPToken&gt; is string)<br /><br /> Parameters:<br />	nPCliente (int): &lt;specify the role of pSocio&gt;<br />	sPTelefono (ANSI string): &lt;specify the role of pCel&gt;<br />	sPClabeDestino (ANSI string): &lt;specify the role of pClabeDestino&gt;<br />	sPNombreDestino (ANSI string): &lt;specify the role of pNombreDestino&gt;<br />	sPClaveBanco (ANSI string): &lt;specify the role of pClaveBanco&gt;<br />	sPNombreBanco (ANSI string): &lt;specify the role of pNombreBanco&gt;<br />	rPMaximo: &lt;specify the role of pMaximo&gt;<br />	bPNotificar: &lt;specify the role of pNotificar&gt;<br />	sPCelular: &lt;specify the role of pCelular&gt;<br />	sPEmail: &lt;specify the role of pEmail&gt;<br />	sPToken (ANSI string): &lt;specify the role of sPToken&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_CtasTercerosAltaSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_CtasTercerosAltaSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_CtasTercerosBajaSPEI">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_CtasTercerosBajaSPEI (&lt;nPCliente&gt; is int, &lt;sPTelefono&gt; is string, &lt;sPClabeDestino&gt; is string, &lt;sPToken&gt; is string)<br /><br /> Parameters:<br />	nPCliente (int): &lt;specify the role of pSocio&gt;<br />	sPTelefono (ANSI string): &lt;specify the role of pCel&gt;<br />	sPClabeDestino (ANSI string): &lt;specify the role of pClabeDestino&gt;<br />	sPToken (ANSI string): &lt;specify the role of sPToken&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	sPNombreDestino (ANSI string): &lt;specify the role of pNombreDestino&gt;<br />	sPClaveBanco (ANSI string): &lt;specify the role of pClaveBanco&gt;<br />	sPNombreBanco (ANSI string): &lt;specify the role of pNombreBanco&gt;<br />	rPMaximo: &lt;specify the role of pMaximo&gt;<br />	bPNotificar: &lt;specify the role of pNotificar&gt;<br />	sPCelular: &lt;specify the role of pCelular&gt;<br />	sPEmail: &lt;specify the role of pEmail&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_CtasTercerosBajaSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_CtasTercerosBajaSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_ListadoCtasTercerosSPEI">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_ListadoCtasTercerosSPEI (&lt;nPCliente&gt; is int, &lt;sPTelefono&gt; is string, &lt;sPClabeDestino&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	nPCliente (int): &lt;specify the role of pSocio&gt;<br />	sPTelefono (ANSI string): &lt;specify the role of pCel&gt;<br />	sPClabeDestino (ANSI string): &lt;specify the role of pClabeDestino&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	sPNombreDestino (ANSI string): &lt;specify the role of pNombreDestino&gt;<br />	sPClaveBanco (ANSI string): &lt;specify the role of pClaveBanco&gt;<br />	sPNombreBanco (ANSI string): &lt;specify the role of pNombreBanco&gt;<br />	rPMaximo: &lt;specify the role of pMaximo&gt;<br />	bPNotificar: &lt;specify the role of pNotificar&gt;<br />	sPCelular: &lt;specify the role of pCelular&gt;<br />	sPEmail: &lt;specify the role of pEmail&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_ListadoCtasTercerosSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_ListadoCtasTercerosSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_Token">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_Token (&lt;pCliente&gt;, &lt;pCodigo&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCliente: &lt;specify the role of pCliente&gt;<br />	pCodigo: &lt;specify the role of pCodigo&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br /> 	pTelefono: &lt;specify the role of pTelefono&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_Token_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_Token_MessageOut"/>
+    </operation>
+    <operation name="PROC_CtaClabeCte">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_CtaClabeCte (&lt;pCtaClabe&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCtaClabe: &lt;specify the role of pCtaClabe&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_CtaClabeCte_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_CtaClabeCte_MessageOut"/>
+    </operation>
+    <operation name="PROC_SavingsAccountsSPEI">
+      <input message="s0:WebServiInficaja_PROC_SavingsAccountsSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_SavingsAccountsSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_CreditPaymentsSPEI">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_CreditPaymentsSPEI (&lt;PUsuarioSistema&gt;, &lt;PLicenciaSistema&gt;, &lt;PDocumento&gt; is int, &lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;PAbono&gt; is currency, &lt;sPtoken&gt; is string, &lt;sPNota&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	PUsuarioSistema: &lt;specify the role of sPUsuarioSistema&gt;<br />	PLicenciaSistema: &lt;specify the role of PLicenciaSistema&gt;<br />	PDocumento (int): &lt;specify the role of nPDocumento&gt;<br />	pCliente (int): &lt;specify the role of nPSocio&gt;<br />	pTelefono (ANSI string): &lt;specify the role of sPTelefono&gt;<br />	PAbono (currency): &lt;specify the role of cyPAbono&gt;<br />	sPtoken (ANSI string): &lt;specify the role of ptoken&gt;<br />	sPNota (ANSI string): &lt;specify the role of sPNota&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	sPtoken (currency): &lt;specify the role of sPtoken&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_CreditPaymentsSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_CreditPaymentsSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_EnviarSMS">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_EnviarSMS (&lt;pCodigoActivacion&gt;, &lt;pTelefono&gt;, &lt;pAsunto&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCodigoActivacion: &lt;specify the role of pTelefono&gt;<br />	pTelefono: &lt;specify the role of pTelefono&gt;<br />	pAsunto: &lt;specify the role of pAsunto&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br /> 	pCodigoActivacion: &lt;specify the role of pCodigoActivacion&gt;<br /> 	pIdCliente: &lt;specify the role of pIdCliente&gt;<br /> 	pEmail: &lt;specify the role of pEmail&gt;<br /> 	pPassWord: &lt;specify the role of pPassWord&gt;<br /> 	pTipo: &lt;specify the role of pTipo&gt;<br /> 	pFechaInicio: &lt;specify the role of pFechaInicio&gt;<br /> 	pIdlvr: &lt;specify the role of pIdlvr&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_EnviarSMS_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_EnviarSMS_MessageOut"/>
+    </operation>
+    <operation name="PROC_SavingsAccounts_txt">
+      <input message="s0:WebServiInficaja_PROC_SavingsAccounts_txt_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_SavingsAccounts_txt_MessageOut"/>
+    </operation>
+    <operation name="PROC_ListadoBancosSPEI">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_ListadoBancosSPEI (&lt;nPCliente&gt; is int, &lt;sPTelefono&gt; is string, &lt;sPClave&gt; is string, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	nPCliente (int): &lt;specify the role of pSocio&gt;<br />	sPTelefono (ANSI string): &lt;specify the role of pCel&gt;<br />	sPClave (ANSI string): &lt;specify the role of pClabeDestino&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br />	sPNombreDestino (ANSI string): &lt;specify the role of pNombreDestino&gt;<br />	sPClaveBanco (ANSI string): &lt;specify the role of pClaveBanco&gt;<br />	sPNombreBanco (ANSI string): &lt;specify the role of pNombreBanco&gt;<br />	rPMaximo: &lt;specify the role of pMaximo&gt;<br />	bPNotificar: &lt;specify the role of pNotificar&gt;<br />	sPCelular: &lt;specify the role of pCelular&gt;<br />	sPEmail: &lt;specify the role of pEmail&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_ListadoBancosSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_ListadoBancosSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_OrdenesPagoSPEI">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_OrdenesPagoSPEI (&lt;nPCliente&gt; is int, &lt;sPTelefono&gt; is string, &lt;sPCuentaClabeOrigen&gt; is string, &lt;sPConcepto&gt; is string, &lt;cyPMonto&gt; is currency, &lt;cyComision&gt; is currency, &lt;sPToken&gt; is string, &lt;sPCuentaClabeDestino&gt; is string, &lt;sClaveBancoDestino&gt; is string, &lt;sNombreBancoDestino&gt; is string, &lt;sNombreBeneficiario&gt; is string, &lt;spAplicacion&gt; is string, &lt;spLatitud&gt;, &lt;spLongitud&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	nPCliente (int): &lt;specify the role of pCliente&gt;<br />	sPTelefono (ANSI string): &lt;specify the role of pTelefono&gt;<br />	sPCuentaClabeOrigen (ANSI string): &lt;specify the role of sPCuentaClave&gt;<br />	sPConcepto (ANSI string): &lt;specify the role of pConcepto&gt;<br />	cyPMonto (currency): &lt;specify the role of cyPMonto&gt;<br />	cyComision (currency): &lt;specify the role of Comision&gt;<br />	sPToken (ANSI string): &lt;specify the role of sPToken&gt;<br />	sPCuentaClabeDestino (ANSI string): &lt;specify the role of sPCuentaClaveDestino&gt;<br />	sClaveBancoDestino (ANSI string): &lt;specify the role of ClaveBancoDestino&gt;<br />	sNombreBancoDestino (ANSI string): &lt;specify the role of NombreBancoDestino&gt;<br />	sNombreBeneficiario (ANSI string): &lt;specify the role of NombreBeneficiario&gt;<br />	spAplicacion (ANSI string): &lt;specify the role of spAplicacion&gt;<br />	spLatitud: &lt;specify the role of spLatitud&gt;<br />	spLongitud: &lt;specify the role of spLongitud&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br />// For instance:<br /> Indicate an example.<br /><br />	sConcepto (ANSI string): &lt;specify the role of sPConceptos&gt;<br />	sPReferenciaNumericapReferenciaNumerica (ANSI string): &lt;specify the role of sPReferenciaNumericapReferenciaNumerica&gt;<br />	pReferencia (ANSI string): &lt;specify the role of pReferencia&gt;<br />	sPReferencias (ANSI string): &lt;specify the role of sPReferenciastring&gt;<br />	sPUsuarioSistema (ANSI string): &lt;specify the role of PUsuarioSistema&gt;<br />	sPLicenciaSistema (ANSI string): &lt;specify the role of PLicenciaSistema&gt;<br />	nPCuenta (int): &lt;specify the role of pCuenta&gt;<br />	sPIdentificador (ANSI string): &lt;specify the role of pIdentificador&gt;<br />	sPReferenciaNumerica: &lt;specify the role of pConcepto&gt;<br />	sPReferencia: &lt;specify the role of pConcepto&gt;<br />	sPClaveRastreo: &lt;specify the role of pConcepto&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_OrdenesPagoSPEI_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_OrdenesPagoSPEI_MessageOut"/>
+    </operation>
+    <operation name="PROC_CargaEdoCtas">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_CargaEdoCtas (&lt;nPCliente&gt; is int, &lt;sPTelefono&gt; is string, &lt;nPCuenta&gt; is int, &lt;pCadenapermiso&gt;)<br /><br /> Parameters:<br />	nPCliente (int): &lt;specify the role of pCliente&gt;<br />	sPTelefono (ANSI string): &lt;specify the role of pTelefono&gt;<br />	nPCuenta (int): &lt;specify the role of pCuenta&gt;<br /> 	pCadenapermiso: &lt;specify the role of pCadenapermiso&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_CargaEdoCtas_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_CargaEdoCtas_MessageOut"/>
+    </operation>
+    <operation name="PROC_UpdatePass">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_UpdatePass (&lt;pCliente&gt;, &lt;pToken&gt;, &lt;pPassNew&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCliente: &lt;specify the role of pCliente&gt;<br />	pToken: &lt;specify the role of pCodigo&gt;<br />	pPassNew: &lt;specify the role of pPassNew&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br /> 	pTelefono: &lt;specify the role of pTelefono&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_UpdatePass_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_UpdatePass_MessageOut"/>
+    </operation>
+    <operation name="PROC_BitacoraDepto">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_BitacoraDepto (&lt;pCodigoActiva&gt;, &lt;pUsuario&gt;, &lt;pPC&gt;, &lt;pRealizo&gt;, &lt;pRecibio&gt;, &lt;pAnotacion&gt;, &lt;pTipoDocto&gt;, &lt;pNumeroDocto&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCodigoActiva: &lt;specify the role of pCodigoActiva&gt;<br />	pUsuario: &lt;specify the role of pUsuario&gt;<br />	pPC: &lt;specify the role of pPC&gt;<br />	pRealizo: &lt;specify the role of pRealizo&gt;<br />	pRecibio: &lt;specify the role of pRecibio&gt;<br />	pAnotacion: &lt;specify the role of pAnotacion&gt;<br />	pTipoDocto: &lt;specify the role of pTipoDocto&gt;<br />	pNumeroDocto: &lt;specify the role of pNumeroDocto&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_BitacoraDepto_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_BitacoraDepto_MessageOut"/>
+    </operation>
+    <operation name="PROC_GeneraLlaveConexion">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_GeneraLlaveConexion (&lt;pClaveGeneraLlave&gt;, &lt;pLlave&gt;)<br /><br /> Parameters:<br />	pClaveGeneraLlave: &lt;specify the role of pClaveGeneraLlave&gt;<br />	pLlave: &lt;specify the role of CodigoGenera&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_GeneraLlaveConexion_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_GeneraLlaveConexion_MessageOut"/>
+    </operation>
+    <operation name="PROC_ValidaUsuario">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_ValidaUsuario (&lt;pUsuario&gt;, &lt;pContrasena&gt;, &lt;pTipo&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pUsuario: &lt;specify the role of pUsuario&gt;<br />	pContrasena: &lt;specify the role of pContrasena&gt;<br />	pTipo: &lt;specify the role of pTipo&gt;<br />	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_ValidaUsuario_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_ValidaUsuario_MessageOut"/>
+    </operation>
+    <operation name="PROC_PlanPagos">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_PlanPagos (&lt;pCliente&gt; is int, &lt;pTelefono&gt; is string, &lt;pDocumento&gt; is int, &lt;pLlaveConexion&gt; is string)<br /><br /> Parameters:<br />	pCliente (int): &lt;specify the role of pCliente&gt;<br />	pTelefono (ANSI string): &lt;specify the role of sPTelefono&gt;<br />	pDocumento (int): &lt;specify the role of pDocumento&gt;<br />	pLlaveConexion (ANSI string): &lt;specify the role of sPLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_PlanPagos_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_PlanPagos_MessageOut"/>
+    </operation>
+    <operation name="PROC_UpdateCel">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_UpdateCel (&lt;pCliente&gt;, &lt;pCelular&gt;, &lt;pCodigo&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCliente: &lt;specify the role of pCliente&gt;<br />	pCelular: &lt;specify the role of pCelular&gt;<br />	pCodigo: &lt;specify the role of pCodigo&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_UpdateCel_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_UpdateCel_MessageOut"/>
+    </operation>
+    <operation name="PROC_LineaCel">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_LineaCel (&lt;pCelular&gt;, &lt;pRegistroSiNo&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pCelular: &lt;specify the role of pCtaClabe&gt;<br />	pRegistroSiNo: &lt;specify the role of pRegistroSiNo&gt;<br /> 	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_LineaCel_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_LineaCel_MessageOut"/>
+    </operation>
+    <operation name="PROC_EnviarWhatsApp">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_EnviarWhatsApp (&lt;pTelefono&gt;, &lt;pMensaje&gt;, &lt;pLlaveConexion&gt;)<br /><br /> Parameters:<br />	pTelefono: &lt;specify the role of pTelefono&gt;<br />	pMensaje: &lt;specify the role of pAsunto&gt;<br />	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br /> Return Value:<br /> 	ANSI string: // 	None<br /><br /> For instance:<br /> Indicate an example.<br /><br /> 	pCodigoActivacion: &lt;specify the role of pCodigoActivacion&gt;<br /> 	pIdCliente: &lt;specify the role of pIdCliente&gt;<br /> 	pEmail: &lt;specify the role of pEmail&gt;<br /> 	pPassWord: &lt;specify the role of pPassWord&gt;<br /> 	pTipo: &lt;specify the role of pTipo&gt;<br /> 	pFechaInicio: &lt;specify the role of pFechaInicio&gt;<br /> 	pIdlvr: &lt;specify the role of pIdlvr&gt;<br />	pCodigoActivacion: &lt;specify the role of pTelefono&gt;]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_EnviarWhatsApp_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_EnviarWhatsApp_MessageOut"/>
+    </operation>
+    <operation name="PROC_RegistrationData_Valid">
+      <documentation><![CDATA[Summary: &lt;specify the procedure action&gt;<br /> Syntax:<br />[ &lt;Result&gt; = ] PROC_RegistrationData_Valid (&lt;pLlaveConexion&gt;, &lt;pDocumentld&gt;, &lt;pClientType&gt;, &lt;pUserName&gt;, &lt;pName&gt;, &lt;pLastname&gt;, &lt;pMail&gt;, &lt;pPhone&gt;, &lt;pCellPhone&gt;)<br /><br /> Parameters:<br />	pLlaveConexion: &lt;specify the role of pLlaveConexion&gt;<br />	pDocumentld: &lt;specify the role of pDocumentld&gt;<br />	pClientType: &lt;specify the role of pClientType&gt;<br />	pUserName: &lt;specify the role of pUserName&gt;<br />	pName: &lt;specify the role of pName&gt;<br />	pLastname: &lt;specify the role of pLasname&gt;<br />	pMail: &lt;specify the role of pMail&gt;<br />	pPhone: &lt;specify the role of pPhone&gt;<br />	pCellPhone: &lt;specify the role of pCellPhone&gt;<br /> Return Value:<br /> 	array: // 	None<br /><br /> For instance:<br /> Indicate an example.<br />]]]]>><![CDATA[</documentation>
+      <input message="s0:WebServiInficaja_PROC_RegistrationData_Valid_MessageIn"/>
+      <output message="s0:WebServiInficaja_PROC_RegistrationData_Valid_MessageOut"/>
+    </operation>
+  </portType>
+  <binding name="WebServiInficajaSOAPBinding" type="s0:WebServiInficajaSOAPPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="PROC_SavingsAccounts">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_SavingsAccounts" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_Connection">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_Connection" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_DataClient">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_DataClient" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_DataBalance">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_DataBalance" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_CreditPayments">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_CreditPayments" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_SavingsPersonalInformation">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_SavingsPersonalInformation" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_Movements">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_Movements" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_Transfers">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_Transfers" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_DataClient_txt">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_DataClient_txt" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_DataBalance_txt">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_DataBalance_txt" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_Transfers_txt">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_Transfers_txt" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_Movements_txt">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_Movements_txt" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_CtasTercerosAltaSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_CtasTercerosAltaSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_CtasTercerosBajaSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_CtasTercerosBajaSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_ListadoCtasTercerosSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_ListadoCtasTercerosSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_Token">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_Token" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_CtaClabeCte">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_CtaClabeCte" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_SavingsAccountsSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_SavingsAccountsSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_CreditPaymentsSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_CreditPaymentsSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_EnviarSMS">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_EnviarSMS" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_SavingsAccounts_txt">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_SavingsAccounts_txt" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_ListadoBancosSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_ListadoBancosSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_OrdenesPagoSPEI">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_OrdenesPagoSPEI" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_CargaEdoCtas">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_CargaEdoCtas" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_UpdatePass">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_UpdatePass" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_BitacoraDepto">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_BitacoraDepto" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_GeneraLlaveConexion">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_GeneraLlaveConexion" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_ValidaUsuario">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_ValidaUsuario" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_PlanPagos">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_PlanPagos" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_UpdateCel">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_UpdateCel" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_LineaCel">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_LineaCel" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_EnviarWhatsApp">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_EnviarWhatsApp" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PROC_RegistrationData_Valid">
+      <soap:operation soapAction="urn:WebServiInficaja/PROC_RegistrationData_Valid" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="WebServiInficaja">
+    <port name="WebServiInficajaSOAPPort" binding="s0:WebServiInficajaSOAPBinding">
+      <soap:address location="http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint></con:endpoints><con:operation id="408d16da-fa7e-42da-bf1b-7f1e754a5128" isOneWay="false" action="urn:WebServiInficaja/PROC_BitacoraDepto" name="PROC_BitacoraDepto" bindingOperationName="PROC_BitacoraDepto" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ac1c4771-221c-4912-96b2-3defb1e597a9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCodigoActiva>?</pCodigoActiva>\r
+      <pUsuario>?</pUsuario>\r
+      <pPC>?</pPC>\r
+      <pRealizo>?</pRealizo>\r
+      <pRecibio>?</pRecibio>\r
+      <pAnotacion>?</pAnotacion>\r
+      <pTipoDocto>?</pTipoDocto>\r
+      <pNumeroDocto>?</pNumeroDocto>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_BitacoraDepto"/></con:call></con:operation><con:operation id="4b65681a-5ab3-4157-9053-37c158d518ac" isOneWay="false" action="urn:WebServiInficaja/PROC_CargaEdoCtas" name="PROC_CargaEdoCtas" bindingOperationName="PROC_CargaEdoCtas" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1561ec74-4de8-4428-9473-88e97e72fb48" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <nPCliente>?</nPCliente>\r
+      <sPTelefono>?</sPTelefono>\r
+      <nPCuenta>?</nPCuenta>\r
+      <pCadenapermiso>?</pCadenapermiso>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_CargaEdoCtas"/></con:call></con:operation><con:operation id="4fdeefb1-6ed8-4e1e-b07c-d52039310161" isOneWay="false" action="urn:WebServiInficaja/PROC_Connection" name="PROC_Connection" bindingOperationName="PROC_Connection" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a6b616b0-e9b1-4b25-a5b3-20421b239336" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pDato>prueba</pDato>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_Connection"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f5f0ac8a-d33b-42e4-8210-22a3e11e6dbf" isOneWay="false" action="urn:WebServiInficaja/PROC_CreditPayments" name="PROC_CreditPayments" bindingOperationName="PROC_CreditPayments" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1a72f5ea-14c0-44e1-8288-8642f86b5043" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <PDocumento>?</PDocumento>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <PAbono>?</PAbono>\r
+      <sPtoken>?</sPtoken>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_CreditPayments"/></con:call></con:operation><con:operation id="cdbb484e-f473-4a66-a298-145a37aa4a31" isOneWay="false" action="urn:WebServiInficaja/PROC_CreditPaymentsSPEI" name="PROC_CreditPaymentsSPEI" bindingOperationName="PROC_CreditPaymentsSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f2e80465-e5d7-4562-bde0-517bdb6a8dd4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <PDocumento>?</PDocumento>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <PAbono>?</PAbono>\r
+      <sPtoken>?</sPtoken>\r
+      <sPNota>?</sPNota>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_CreditPaymentsSPEI"/></con:call></con:operation><con:operation id="afdc9df1-39cc-4980-a5fd-14a1e23fa53a" isOneWay="false" action="urn:WebServiInficaja/PROC_CtaClabeCte" name="PROC_CtaClabeCte" bindingOperationName="PROC_CtaClabeCte" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f0771a7e-d31a-4f8e-b39a-91f3736a3ffc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCtaClabe>?</pCtaClabe>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_CtaClabeCte"/></con:call></con:operation><con:operation id="67088659-e3f9-4349-9d43-027c59c8426c" isOneWay="false" action="urn:WebServiInficaja/PROC_CtasTercerosAltaSPEI" name="PROC_CtasTercerosAltaSPEI" bindingOperationName="PROC_CtasTercerosAltaSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9ae73a9b-3ec5-4110-aafe-9988fb5ae664" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <nPCliente>?</nPCliente>\r
+      <sPTelefono>?</sPTelefono>\r
+      <sPClabeDestino>?</sPClabeDestino>\r
+      <sPNombreDestino>?</sPNombreDestino>\r
+      <sPClaveBanco>?</sPClaveBanco>\r
+      <sPNombreBanco>?</sPNombreBanco>\r
+      <rPMaximo>?</rPMaximo>\r
+      <bPNotificar>?</bPNotificar>\r
+      <sPCelular>?</sPCelular>\r
+      <sPEmail>?</sPEmail>\r
+      <sPToken>?</sPToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_CtasTercerosAltaSPEI"/></con:call></con:operation><con:operation id="369184cd-0bc6-4eb5-a7b3-23b55e717a88" isOneWay="false" action="urn:WebServiInficaja/PROC_CtasTercerosBajaSPEI" name="PROC_CtasTercerosBajaSPEI" bindingOperationName="PROC_CtasTercerosBajaSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="591d23b5-458b-429c-a162-fedc4202d99e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <nPCliente>?</nPCliente>\r
+      <sPTelefono>?</sPTelefono>\r
+      <sPClabeDestino>?</sPClabeDestino>\r
+      <sPToken>?</sPToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_CtasTercerosBajaSPEI"/></con:call></con:operation><con:operation id="10945906-d2ca-4dfe-a1ad-9f30545b96b9" isOneWay="false" action="urn:WebServiInficaja/PROC_DataBalance" name="PROC_DataBalance" bindingOperationName="PROC_DataBalance" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5a0b7cd5-b6a4-44c9-925f-dc38eb06fbb7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>73085</pCliente>\r
+      <pTelefono></pTelefono>\r
+      <pCuenta>0</pCuenta>\r
+      <pInversion>0</pInversion>\r
+      <pDocumento>0</pDocumento>\r
+      <pLlaveConexion>39qa2o8QHKE/A4ffYHk3DuFAOyoJUbC17yFQgMo4M50AzuZwyn0xu1HvD8UQ8YwR+ZUEmlKRd5aDk1zzl7AdwsodFVvLQ</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_DataBalance"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="043d9255-5618-4c5f-bd36-ca3694a8430a" isOneWay="false" action="urn:WebServiInficaja/PROC_DataBalance_txt" name="PROC_DataBalance_txt" bindingOperationName="PROC_DataBalance_txt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a314ee1c-fc9c-44ab-a91f-eeaf70e71953" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pCuenta>?</pCuenta>\r
+      <pInversion>?</pInversion>\r
+      <pDocumento>?</pDocumento>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_DataBalance_txt"/></con:call></con:operation><con:operation id="fae200b4-dbe9-4133-a1d5-d5e284af3454" isOneWay="false" action="urn:WebServiInficaja/PROC_DataClient" name="PROC_DataClient" bindingOperationName="PROC_DataClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="89caa678-d193-4ebc-9690-e5b951fda598" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_DataClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="fc0abf91-5eb7-4a81-a55e-12d0d03f5ac6" isOneWay="false" action="urn:WebServiInficaja/PROC_DataClient_txt" name="PROC_DataClient_txt" bindingOperationName="PROC_DataClient_txt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d3a2091f-2373-47aa-b2e3-a2f108ed18d9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PCliente>?</PCliente>\r
+      <PTelefono>?</PTelefono>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_DataClient_txt"/></con:call></con:operation><con:operation id="043730cd-1fb3-4e3f-8c0a-5df9cc8e8e39" isOneWay="false" action="urn:WebServiInficaja/PROC_EnviarSMS" name="PROC_EnviarSMS" bindingOperationName="PROC_EnviarSMS" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e95edb80-616f-41fc-96e2-5f2586f82f32" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCodigoActivacion>?</pCodigoActivacion>\r
+      <pTelefono>?</pTelefono>\r
+      <pAsunto>?</pAsunto>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_EnviarSMS"/></con:call></con:operation><con:operation id="ebbe6f26-61a2-465b-92b2-382ff531f2ce" isOneWay="false" action="urn:WebServiInficaja/PROC_EnviarWhatsApp" name="PROC_EnviarWhatsApp" bindingOperationName="PROC_EnviarWhatsApp" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e14aec39-2bdc-4787-bde6-ba5a7db447f1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pTelefono>?</pTelefono>\r
+      <pMensaje>?</pMensaje>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_EnviarWhatsApp"/></con:call></con:operation><con:operation id="e84ab96d-1dbf-40a9-8cc4-609cd6d774ed" isOneWay="false" action="urn:WebServiInficaja/PROC_GeneraLlaveConexion" name="PROC_GeneraLlaveConexion" bindingOperationName="PROC_GeneraLlaveConexion" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1b4b119a-bf3d-4f5d-b4a7-880792c9a0cc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pClaveGeneraLlave>?</pClaveGeneraLlave>\r
+      <pLlave>?</pLlave>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_GeneraLlaveConexion"/></con:call></con:operation><con:operation id="82657233-f92d-4fc9-a47a-764d5a2b9526" isOneWay="false" action="urn:WebServiInficaja/PROC_LineaCel" name="PROC_LineaCel" bindingOperationName="PROC_LineaCel" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da700ab9-38e6-4f79-bb68-57923a6b7a2b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCelular>?</pCelular>\r
+      <pRegistroSiNo>?</pRegistroSiNo>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_LineaCel"/></con:call></con:operation><con:operation id="41a03593-fae0-4293-89a2-21b760ff5bf1" isOneWay="false" action="urn:WebServiInficaja/PROC_ListadoBancosSPEI" name="PROC_ListadoBancosSPEI" bindingOperationName="PROC_ListadoBancosSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0960819e-0490-402e-bec5-e0f65d589307" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <nPCliente>73085</nPCliente>\r
+      <sPTelefono></sPTelefono>\r
+      <sPClave></sPClave>\r
+      <pLlaveConexion>39qa2o8QHKE/A4ffYHk3DuFAOyoJUbC17yFQgMo4M50AzuZwyn0xu1HvD8UQ8YwR+ZUEmlKRd5aDk1zzl7AdwsodFVvLQ</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_ListadoBancosSPEI"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="0a686369-c670-446a-a966-66e5d11414a3" isOneWay="false" action="urn:WebServiInficaja/PROC_ListadoCtasTercerosSPEI" name="PROC_ListadoCtasTercerosSPEI" bindingOperationName="PROC_ListadoCtasTercerosSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f1fcd633-b4b1-4377-a83b-ce7c4c80e833" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <nPCliente>?</nPCliente>\r
+      <sPTelefono>?</sPTelefono>\r
+      <sPClabeDestino>?</sPClabeDestino>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_ListadoCtasTercerosSPEI"/></con:call></con:operation><con:operation id="721109fe-f619-4102-9160-cdbb124cab86" isOneWay="false" action="urn:WebServiInficaja/PROC_Movements" name="PROC_Movements" bindingOperationName="PROC_Movements" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="de7ed9d3-8826-4c72-b7f4-48bad13faea5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pCuenta>?</pCuenta>\r
+      <pDesde>?</pDesde>\r
+      <pHasta>?</pHasta>\r
+      <pPrestamo>?</pPrestamo>\r
+      <pPlazoFijo>?</pPlazoFijo>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_Movements"/></con:call></con:operation><con:operation id="3a46481c-a95f-4206-93e7-06b3437c29eb" isOneWay="false" action="urn:WebServiInficaja/PROC_Movements_txt" name="PROC_Movements_txt" bindingOperationName="PROC_Movements_txt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9efb1522-46b4-4747-9262-df9ae8f7ff7c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PCliente>?</PCliente>\r
+      <PTelefono>?</PTelefono>\r
+      <PCuenta>?</PCuenta>\r
+      <pDesde>?</pDesde>\r
+      <pHasta>?</pHasta>\r
+      <pPrestamo>?</pPrestamo>\r
+      <pPlazoFijo>?</pPlazoFijo>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_Movements_txt"/></con:call></con:operation><con:operation id="6f3e3bc8-b0df-4288-baaa-214672a2a3f9" isOneWay="false" action="urn:WebServiInficaja/PROC_OrdenesPagoSPEI" name="PROC_OrdenesPagoSPEI" bindingOperationName="PROC_OrdenesPagoSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6f6bf23c-c277-49bc-8948-fb7f70e7d71b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <nPCliente>?</nPCliente>\r
+      <sPTelefono>?</sPTelefono>\r
+      <sPCuentaClabeOrigen>?</sPCuentaClabeOrigen>\r
+      <sPConcepto>?</sPConcepto>\r
+      <cyPMonto>?</cyPMonto>\r
+      <cyComision>?</cyComision>\r
+      <sPToken>?</sPToken>\r
+      <sPCuentaClabeDestino>?</sPCuentaClabeDestino>\r
+      <sClaveBancoDestino>?</sClaveBancoDestino>\r
+      <sNombreBancoDestino>?</sNombreBancoDestino>\r
+      <sNombreBeneficiario>?</sNombreBeneficiario>\r
+      <spAplicacion>?</spAplicacion>\r
+      <spLatitud>?</spLatitud>\r
+      <spLongitud>?</spLongitud>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_OrdenesPagoSPEI"/></con:call></con:operation><con:operation id="ef841b20-3115-46cf-9488-db8a1715b7e4" isOneWay="false" action="urn:WebServiInficaja/PROC_PlanPagos" name="PROC_PlanPagos" bindingOperationName="PROC_PlanPagos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d52d45d8-cff1-4d47-98c5-1a73bd93d840" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pDocumento>?</pDocumento>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_PlanPagos"/></con:call></con:operation><con:operation id="2a989180-970a-470b-8a50-4a0306ace8e5" isOneWay="false" action="urn:WebServiInficaja/PROC_RegistrationData_Valid" name="PROC_RegistrationData_Valid" bindingOperationName="PROC_RegistrationData_Valid" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9d97234c-cc0d-44cd-85a9-497748893d33" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+      <pDocumentld>?</pDocumentld>\r
+      <pClientType>?</pClientType>\r
+      <pUserName>?</pUserName>\r
+      <pName>?</pName>\r
+      <pLastname>?</pLastname>\r
+      <pMail>?</pMail>\r
+      <pPhone>?</pPhone>\r
+      <pCellPhone>?</pCellPhone>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_RegistrationData_Valid"/></con:call></con:operation><con:operation id="fa145a2a-adb9-49aa-9567-90654bc69e35" isOneWay="false" action="urn:WebServiInficaja/PROC_SavingsAccounts" name="PROC_SavingsAccounts" bindingOperationName="PROC_SavingsAccounts" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="01539114-6083-40d7-aa40-78965abd01b1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <pCuenta>?</pCuenta>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pInversion>?</pInversion>\r
+      <PNota>?</PNota>\r
+      <PCodeBar>?</PCodeBar>\r
+      <PRetiro>?</PRetiro>\r
+      <PDeposito>?</PDeposito>\r
+      <PToken>?</PToken>\r
+      <sPCuentaClabeDestino>?</sPCuentaClabeDestino>\r
+      <sPTipoProceso>?</sPTipoProceso>\r
+      <cyPMontoComision>?</cyPMontoComision>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_SavingsAccounts"/></con:call></con:operation><con:operation id="7c957344-24f9-454c-81ca-5a3e34b52aac" isOneWay="false" action="urn:WebServiInficaja/PROC_SavingsAccounts_txt" name="PROC_SavingsAccounts_txt" bindingOperationName="PROC_SavingsAccounts_txt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4ef320ef-edaf-4b1c-b475-1db1a5d57de9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <pCuenta>?</pCuenta>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pInversion>?</pInversion>\r
+      <PNota>?</PNota>\r
+      <PCodeBar>?</PCodeBar>\r
+      <PRetiro>?</PRetiro>\r
+      <PDeposito>?</PDeposito>\r
+      <PToken>?</PToken>\r
+      <sPCuentaClabeDestino>?</sPCuentaClabeDestino>\r
+      <sPTipoProceso>?</sPTipoProceso>\r
+      <cyPMontoComision>?</cyPMontoComision>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_SavingsAccounts_txt"/></con:call></con:operation><con:operation id="920c0060-ea6e-4276-88c0-aed8cd2ef3cc" isOneWay="false" action="urn:WebServiInficaja/PROC_SavingsAccountsSPEI" name="PROC_SavingsAccountsSPEI" bindingOperationName="PROC_SavingsAccountsSPEI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1c8460b9-75d6-4ac7-9254-29b5060ce94a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <pCuenta>?</pCuenta>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pInversion>?</pInversion>\r
+      <PNota>?</PNota>\r
+      <PCodeBar>?</PCodeBar>\r
+      <PRetiro>?</PRetiro>\r
+      <PDeposito>?</PDeposito>\r
+      <PToken>?</PToken>\r
+      <sPCuentaClabeDestino>?</sPCuentaClabeDestino>\r
+      <sPTipoProceso>?</sPTipoProceso>\r
+      <cyPMontoComision>?</cyPMontoComision>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_SavingsAccountsSPEI"/></con:call></con:operation><con:operation id="87a96697-f46f-491e-8554-a6ef11b37c70" isOneWay="false" action="urn:WebServiInficaja/PROC_SavingsPersonalInformation" name="PROC_SavingsPersonalInformation" bindingOperationName="PROC_SavingsPersonalInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9f8bb3a9-e376-4e52-9b3c-a6e0aaef8ec3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pTelefono>?</pTelefono>\r
+      <pTelefonoNew>?</pTelefonoNew>\r
+      <pEmailNew>?</pEmailNew>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_SavingsPersonalInformation"/></con:call></con:operation><con:operation id="554984fe-d923-4079-bd66-97521036a49c" isOneWay="false" action="urn:WebServiInficaja/PROC_Token" name="PROC_Token" bindingOperationName="PROC_Token" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e4eadf33-8831-41e4-bd47-13a37155d630" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pCodigo>?</pCodigo>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_Token"/></con:call></con:operation><con:operation id="26a3f4bb-3bac-450f-86f3-7a2679b6e1aa" isOneWay="false" action="urn:WebServiInficaja/PROC_Transfers" name="PROC_Transfers" bindingOperationName="PROC_Transfers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ff52846e-a73e-48e4-9be9-704d17b2cfae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <PCuenta>?</PCuenta>\r
+      <PCliente>?</PCliente>\r
+      <PTelefono>?</PTelefono>\r
+      <PInversion>?</PInversion>\r
+      <PNota>?</PNota>\r
+      <PCodeBar>?</PCodeBar>\r
+      <PRetiro>?</PRetiro>\r
+      <PDeposito>?</PDeposito>\r
+      <PToken>?</PToken>\r
+      <nClienteDestino>?</nClienteDestino>\r
+      <nPCuentaDestino>?</nPCuentaDestino>\r
+      <sPCuentaClabeDestino>?</sPCuentaClabeDestino>\r
+      <sPTipoProceso>?</sPTipoProceso>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_Transfers"/></con:call></con:operation><con:operation id="51f86540-3b8a-49f5-8475-57f8853b361d" isOneWay="false" action="urn:WebServiInficaja/PROC_Transfers_txt" name="PROC_Transfers_txt" bindingOperationName="PROC_Transfers_txt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f3d9c134-55b6-4c41-a929-701cdd734af0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <PUsuarioSistema>?</PUsuarioSistema>\r
+      <PLicenciaSistema>?</PLicenciaSistema>\r
+      <PCuenta>?</PCuenta>\r
+      <PCliente>?</PCliente>\r
+      <PTelefono>?</PTelefono>\r
+      <PInversion>?</PInversion>\r
+      <PNota>?</PNota>\r
+      <PCodeBar>?</PCodeBar>\r
+      <PRetiro>?</PRetiro>\r
+      <PDeposito>?</PDeposito>\r
+      <PToken>?</PToken>\r
+      <nClienteDestino>?</nClienteDestino>\r
+      <nPCuentaDestino>?</nPCuentaDestino>\r
+      <sPCuentaClabeDestino>?</sPCuentaClabeDestino>\r
+      <sPTipoProceso>?</sPTipoProceso>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_Transfers_txt"/></con:call></con:operation><con:operation id="d035b770-b992-4b0a-8024-f7fd84c4583d" isOneWay="false" action="urn:WebServiInficaja/PROC_UpdateCel" name="PROC_UpdateCel" bindingOperationName="PROC_UpdateCel" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cf7f0942-2c9a-4eb4-92f6-f46948ff582c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pCelular>?</pCelular>\r
+      <pCodigo>?</pCodigo>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_UpdateCel"/></con:call></con:operation><con:operation id="6588a6a2-f4ea-420f-8216-0592fe4ca80f" isOneWay="false" action="urn:WebServiInficaja/PROC_UpdatePass" name="PROC_UpdatePass" bindingOperationName="PROC_UpdatePass" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0a7468d5-9c13-4c5a-8647-6060abd52472" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pCliente>?</pCliente>\r
+      <pToken>?</pToken>\r
+      <pPassNew>?</pPassNew>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_UpdatePass"/></con:call></con:operation><con:operation id="695596b0-4111-4d14-8885-c3eb508a5ea3" isOneWay="false" action="urn:WebServiInficaja/PROC_ValidaUsuario" name="PROC_ValidaUsuario" bindingOperationName="PROC_ValidaUsuario" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4ccdd5d6-6a1d-409f-8fc2-233e536d5786" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://cajatonaya2019.sytes.net:81/WEBSERVIINFICAJA23_WEB/awws/WebServiInficaja.awws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <pUsuario>?</pUsuario>\r
+      <pContrasena>?</pContrasena>\r
+      <pTipo>?</pTipo>\r
+      <pLlaveConexion>?</pLlaveConexion>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:WebServiInficaja/PROC_ValidaUsuario"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
