@@ -16,7 +16,7 @@ namespace TestService
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataBalance());
+            Application.Run(new Varios());
         }
     }
 }
