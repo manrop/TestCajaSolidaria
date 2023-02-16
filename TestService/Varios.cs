@@ -29,11 +29,13 @@ namespace TestService
             String llave = "39qa2o8QHKE/A4ffYHk3DuFAOyoJUbC17yFQgMo4M50AzuZwyn0xu1HvD8UQ8YwR+ZUEmlKRd5aDk1zzl7AdwsodFVvLQ";
 
 
-            var resAsync = webServiInficaja.PROC_RegistrationData_ValidAsync(llave,"","","","","","","","");
+            var resAsync = webServiInficaja.PROC_RegistrationData_ValidAsync(llave,"","","", "MONICA", "DE LA CRUZ FLORES", "noeheri@gmail.comt", "", "3411195926");
             resAsync.Wait();
             //resAsync.Result
 
-            txtResult.Text = resAsync.Result.PROC_RegistrationData_ValidResult;
+            var results = resAsync.Result;
+            if (results.PROC_RegistrationData_ValidResponse1.Length > 0)
+                txtResult.Text = resAsync.Result.PROC_RegistrationData_ValidResponse1[0].sRD_Status;
         }
     }
 }

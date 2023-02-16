@@ -368,6 +368,150 @@ namespace TestService.WebServiceCajaSol {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:WebServiInficaja")]
+    public partial class ST_RegistrationData : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string sRD_StatusField;
+        
+        private string sRD_MSGField;
+        
+        private string sRD_AciertosField;
+        
+        private string sRD_NoSocioField;
+        
+        private string sRD_UserNameField;
+        
+        private string sRD_NameField;
+        
+        private string sRD_MailField;
+        
+        private string sRD_PhoneField;
+        
+        private string sRD_CellPhoneField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string sRD_Status {
+            get {
+                return this.sRD_StatusField;
+            }
+            set {
+                this.sRD_StatusField = value;
+                this.RaisePropertyChanged("sRD_Status");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string sRD_MSG {
+            get {
+                return this.sRD_MSGField;
+            }
+            set {
+                this.sRD_MSGField = value;
+                this.RaisePropertyChanged("sRD_MSG");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string sRD_Aciertos {
+            get {
+                return this.sRD_AciertosField;
+            }
+            set {
+                this.sRD_AciertosField = value;
+                this.RaisePropertyChanged("sRD_Aciertos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string sRD_NoSocio {
+            get {
+                return this.sRD_NoSocioField;
+            }
+            set {
+                this.sRD_NoSocioField = value;
+                this.RaisePropertyChanged("sRD_NoSocio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string sRD_UserName {
+            get {
+                return this.sRD_UserNameField;
+            }
+            set {
+                this.sRD_UserNameField = value;
+                this.RaisePropertyChanged("sRD_UserName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string sRD_Name {
+            get {
+                return this.sRD_NameField;
+            }
+            set {
+                this.sRD_NameField = value;
+                this.RaisePropertyChanged("sRD_Name");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string sRD_Mail {
+            get {
+                return this.sRD_MailField;
+            }
+            set {
+                this.sRD_MailField = value;
+                this.RaisePropertyChanged("sRD_Mail");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string sRD_Phone {
+            get {
+                return this.sRD_PhoneField;
+            }
+            set {
+                this.sRD_PhoneField = value;
+                this.RaisePropertyChanged("sRD_Phone");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string sRD_CellPhone {
+            get {
+                return this.sRD_CellPhoneField;
+            }
+            set {
+                this.sRD_CellPhoneField = value;
+                this.RaisePropertyChanged("sRD_CellPhone");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:WebServiInficaja")]
     public partial class ST_UpdateCel : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string sUC_StatusField;
@@ -4163,7 +4307,7 @@ namespace TestService.WebServiceCajaSol {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class PROC_Transfers_txtResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace= "", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
         public string PROC_Transfers_txtResult;
         
         public PROC_Transfers_txtResponse() {
@@ -4569,7 +4713,7 @@ namespace TestService.WebServiceCajaSol {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class PROC_SavingsAccountsSPEIResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_SavingsAccountsSPEIResponse", Namespace= "urn:WebServiInficaja", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_SavingsAccountsSPEIResponse", Namespace="urn:WebServiInficaja", Order=0)]
         [System.Xml.Serialization.XmlArrayAttribute()]
         [System.Xml.Serialization.XmlArrayItemAttribute("PROC_SavingsAccountsSPEIResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public TestService.WebServiceCajaSol.ST_SavingsAccounts[] PROC_SavingsAccountsSPEIResponse1;
@@ -5409,14 +5553,16 @@ namespace TestService.WebServiceCajaSol {
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class PROC_RegistrationData_ValidResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string PROC_RegistrationData_ValidResult;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="PROC_RegistrationData_ValidResponse", Namespace= "urn:WebServiInficaja", Order=0)]
+        [System.Xml.Serialization.XmlArrayAttribute()]
+        [System.Xml.Serialization.XmlArrayItemAttribute("PROC_RegistrationData_ValidResult", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public TestService.WebServiceCajaSol.ST_RegistrationData[] PROC_RegistrationData_ValidResponse1;
         
         public PROC_RegistrationData_ValidResponse() {
         }
         
-        public PROC_RegistrationData_ValidResponse(string PROC_RegistrationData_ValidResult) {
-            this.PROC_RegistrationData_ValidResult = PROC_RegistrationData_ValidResult;
+        public PROC_RegistrationData_ValidResponse(TestService.WebServiceCajaSol.ST_RegistrationData[] PROC_RegistrationData_ValidResponse1) {
+            this.PROC_RegistrationData_ValidResponse1 = PROC_RegistrationData_ValidResponse1;
         }
     }
     
@@ -6691,7 +6837,7 @@ namespace TestService.WebServiceCajaSol {
             return base.Channel.PROC_RegistrationData_Valid(request);
         }
         
-        public string PROC_RegistrationData_Valid(string pLlaveConexion, string pDocumentld, string pClientType, string pUserName, string pName, string pLastname, string pMail, string pPhone, string pCellPhone) {
+        public TestService.WebServiceCajaSol.ST_RegistrationData[] PROC_RegistrationData_Valid(string pLlaveConexion, string pDocumentld, string pClientType, string pUserName, string pName, string pLastname, string pMail, string pPhone, string pCellPhone) {
             TestService.WebServiceCajaSol.PROC_RegistrationData_ValidRequest inValue = new TestService.WebServiceCajaSol.PROC_RegistrationData_ValidRequest();
             inValue.pLlaveConexion = pLlaveConexion;
             inValue.pDocumentld = pDocumentld;
@@ -6703,7 +6849,7 @@ namespace TestService.WebServiceCajaSol {
             inValue.pPhone = pPhone;
             inValue.pCellPhone = pCellPhone;
             TestService.WebServiceCajaSol.PROC_RegistrationData_ValidResponse retVal = ((TestService.WebServiceCajaSol.WebServiInficajaSOAPPortType)(this)).PROC_RegistrationData_Valid(inValue);
-            return retVal.PROC_RegistrationData_ValidResult;
+            return retVal.PROC_RegistrationData_ValidResponse1;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

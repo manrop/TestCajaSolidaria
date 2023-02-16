@@ -228,6 +228,9 @@
     <None Include="Connected Services\WebServiceCajaSol\TestService.WebServiceCajaSol.ST_PlanPagos.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WebServiceCajaSol\TestService.WebServiceCajaSol.ST_RegistrationData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WebServiceCajaSol\TestService.WebServiceCajaSol.ST_SavingsAccounts.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

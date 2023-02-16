@@ -391,6 +391,11 @@
           <xsd:element maxOccurs="unbounded" name="PROC_UpdateCelResult" type="s0:ST_UpdateCel" />
         </xsd:sequence>
       </xsd:complexType>
+      <xsd:complexType name="PROC_RegistrationData_ValidResponse">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="PROC_RegistrationData_ValidResult" type="s0:ST_RegistrationData" />
+        </xsd:sequence>
+      </xsd:complexType>
     </xsd:schema>
   </types>
   <message name="WebServiInficaja_PROC_SavingsAccounts_MessageIn">
@@ -772,7 +777,7 @@
     <part name="pCellPhone" type="xsd:string" />
   </message>
   <message name="WebServiInficaja_PROC_RegistrationData_Valid_MessageOut">
-    <part name="PROC_RegistrationData_ValidResult" type="xsd:string" />
+    <part name="PROC_RegistrationData_ValidResponse" type="s0:PROC_RegistrationData_ValidResponse" />
   </message>
   <message name="WebServiInficaja_PROC_PlanPagos_txt_MessageIn">
     <part name="pCliente" type="xsd:int" />
@@ -946,7 +951,7 @@
       <output message="s0:WebServiInficaja_PROC_EnviarWhatsApp_MessageOut" />
     </operation>
     <operation name="PROC_RegistrationData_Valid">
-      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_RegistrationData_Valid (&amp;lt;pLlaveConexion&amp;gt;, &amp;lt;pDocumentld&amp;gt;, &amp;lt;pClientType&amp;gt;, &amp;lt;pUserName&amp;gt;, &amp;lt;pName&amp;gt;, &amp;lt;pLastname&amp;gt;, &amp;lt;pMail&amp;gt;, &amp;lt;pPhone&amp;gt;, &amp;lt;pCellPhone&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt;	pDocumentld: &amp;lt;specify the role of pDocumentld&amp;gt;&lt;br /&gt;	pClientType: &amp;lt;specify the role of pClientType&amp;gt;&lt;br /&gt;	pUserName: &amp;lt;specify the role of pUserName&amp;gt;&lt;br /&gt;	pName: &amp;lt;specify the role of pName&amp;gt;&lt;br /&gt;	pLastname: &amp;lt;specify the role of pLasname&amp;gt;&lt;br /&gt;	pMail: &amp;lt;specify the role of pMail&amp;gt;&lt;br /&gt;	pPhone: &amp;lt;specify the role of pPhone&amp;gt;&lt;br /&gt;	pCellPhone: &amp;lt;specify the role of pCellPhone&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	ANSI string: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;</documentation>
+      <documentation> Summary: &amp;lt;specify the procedure action&amp;gt;&lt;br /&gt; Syntax:&lt;br /&gt;[ &amp;lt;Result&amp;gt; = ] PROC_RegistrationData_Valid (&amp;lt;pLlaveConexion&amp;gt;, &amp;lt;pDocumentld&amp;gt;, &amp;lt;pClientType&amp;gt;, &amp;lt;pUserName&amp;gt;, &amp;lt;pName&amp;gt;, &amp;lt;pLastname&amp;gt;, &amp;lt;pMail&amp;gt;, &amp;lt;pPhone&amp;gt;, &amp;lt;pCellPhone&amp;gt;)&lt;br /&gt;&lt;br /&gt; Parameters:&lt;br /&gt;	pLlaveConexion: &amp;lt;specify the role of pLlaveConexion&amp;gt;&lt;br /&gt;	pDocumentld: &amp;lt;specify the role of pDocumentld&amp;gt;&lt;br /&gt;	pClientType: &amp;lt;specify the role of pClientType&amp;gt;&lt;br /&gt;	pUserName: &amp;lt;specify the role of pUserName&amp;gt;&lt;br /&gt;	pName: &amp;lt;specify the role of pName&amp;gt;&lt;br /&gt;	pLastname: &amp;lt;specify the role of pLasname&amp;gt;&lt;br /&gt;	pMail: &amp;lt;specify the role of pMail&amp;gt;&lt;br /&gt;	pPhone: &amp;lt;specify the role of pPhone&amp;gt;&lt;br /&gt;	pCellPhone: &amp;lt;specify the role of pCellPhone&amp;gt;&lt;br /&gt; Return Value:&lt;br /&gt; 	array: // 	None&lt;br /&gt;&lt;br /&gt; For instance:&lt;br /&gt; Indicate an example.&lt;br /&gt;</documentation>
       <input message="s0:WebServiInficaja_PROC_RegistrationData_Valid_MessageIn" />
       <output message="s0:WebServiInficaja_PROC_RegistrationData_Valid_MessageOut" />
     </operation>
